@@ -1,0 +1,13 @@
+.site-header {
+    padding: 1rem 0;
+}
+
+.site-header ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.site-header__logo {
+    max-width: 110px;
+}
