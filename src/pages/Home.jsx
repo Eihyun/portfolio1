@@ -1,24 +1,36 @@
-import homeBanner from "../assets/images/home-banner.jpg";
+import "./Home.css";
 
 import Header from "../global/Header"
 import Footer from "../global/Footer";
-
-import "./Home.css";
+import RainbowBar from "../assets/components/RainbowBar";
+import Icons from "../assets/components/Icons";
 
 function Home() {
 
     return(
         <>
-            <div className="container" id="SUPER_COOL_HOME_PAGE">
-                <div className="grid vertical-center ">
-                    <div className="col-12 col-6-lg">
-                        <h1 className="h2">Be Kind, Say Hi</h1>
+            <div className="container">
+                <div className="grid vertical-center home-banner">
+                    <div className="col-8-lg">
+                        <div className="home-banner_text">
+
+                            <h2 className="h2 loos-extended home-banner_beKind">Be Kind, <span className="loos-wide home-banner_sayHi">Say Hi</span></h2>
+
+                            <div className="home-banner_rainbow">
+                                <RainbowBar />
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-12 col-4-lg">
-                        <img src={homeBanner} />
+                    <div className="col-11-lg">
+                        
+                    </div>
+                    <div className="col-1-lg">
+                        <Icons />
                     </div>
                 </div>
             </div>
+
+
         </>
     )
 

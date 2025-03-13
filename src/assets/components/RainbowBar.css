@@ -1,0 +1,26 @@
+.rainbow-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    height: 100%;
+}
+
+.yellow-bar {
+    background-color: var(--tertiary);
+    height: 1.875rem;
+}
+
+.red-bar {
+    background-color: var(--primary);
+    height: 2.5rem;
+}
+
+.green-bar {
+    background-color: var(--secondary);
+    height: 3.75rem;
+}
+
+.blue-bar {
+    background-color: var(--quaternary);
+    height: 5rem;
+}

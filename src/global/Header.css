@@ -4,10 +4,17 @@
 
 .site-header ul {
     display: flex;
-    gap: 1rem;
+    gap: 5rem;
     justify-content: end;
 }
 
 .site-header__logo {
     max-width: 110px;
+}
+
+.navbar {
+    font-family: "noka", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
