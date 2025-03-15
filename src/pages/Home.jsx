@@ -1,9 +1,12 @@
 import "./Home.css";
 
-import Header from "../global/Header"
+import Header from "../global/Header";
 import Footer from "../global/Footer";
 import RainbowBar from "../assets/components/RainbowBar";
 import Icons from "../assets/components/Icons";
+
+import FuzzyText from '../assets/components/FuzzyText';
+
 
 function Home() {
 
@@ -14,7 +17,12 @@ function Home() {
                     <div className="col-8-lg">
                         <div className="home-banner_text">
 
-                            <h2 className="h2 loos-extended home-banner_beKind">Be Kind, <span className="loos-wide home-banner_sayHi">Say Hi</span></h2>
+                            <h2 className="h2 loos-extended home-banner_beKind">
+                            <FuzzyText baseIntensity={0.18}>
+                                Be Kind, 
+                            </FuzzyText>
+                                <span className="loos-wide home-banner_sayHi">Say Hi</span>
+                            </h2>
 
                             <div className="home-banner_rainbow">
                                 <RainbowBar />
@@ -29,7 +37,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-
 
         </>
     )

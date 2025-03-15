@@ -1,6 +1,7 @@
 import "./Footer.css";
 import RainbowBar from "../assets/components/RainbowBar";
 
+
 function Footer() {
 
     return (
@@ -9,7 +10,7 @@ function Footer() {
                 <div className="container">
                     <div className="grid mb-3">
                         <div className="col-8-md col-2-sm">
-                            <a href="mailto:keh7370@gmail.com">Email Eihyun</a>
+                            Email Eihyun
                         </div>
                         <div className="col-4-md col-4-sm">
                             © Created by Eihyun Kim, 2025

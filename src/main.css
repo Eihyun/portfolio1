@@ -11,6 +11,10 @@ html, body, #root {
     flex-direction: column;
 }
 
+.page-content {
+    overflow: hidden;
+}
+
 /* Colors */
 :root {
     --primary: #DD3421;
@@ -199,5 +203,13 @@ main {
 .loos-condensed { font-family: "loos-condensed", sans-serif; }
 .loos-wide { font-family: "loos-wide", sans-serif; }
 .loos-extrawide { font-family: "loos-extrawide", sans-serif; }
-.loos-extended { font-family: "loos-extended", sans-serif }
+.loos-extended { font-family: "loos-extended", sans-serif; }
 .noka { font-family: "noka", sans-serif; }
+
+/* Font-Weight */
+.ft-4 { font-weight: 400; }
+.ft-5 { font-weight: 500; }
+.ft-6 { font-weight: 600; }
+.ft-7 { font-weight: 700; }
+.ft-8 { font-weight: 800; }
+.ft-9 { font-weight: 900; }
