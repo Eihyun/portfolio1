@@ -1,0 +1,14 @@
+
+.placeholder {
+    background-color: lightgray;
+    height: 30rem;
+}
+
+.about-intro_text > p {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.about-intro_text > p > span {
+    font-weight: 600;
+}

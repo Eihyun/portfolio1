@@ -9,7 +9,19 @@
 }
 
 .site-header__logo {
-    max-width: 110px;
+    max-width: 7rem;
+}
+
+@media screen and (max-width: 1439px) {
+    .site-header__logo {
+        max-width: 6rem;
+    }
+}
+
+@media screen and (max-width: 833px) {
+    .site-header__logo {
+        max-width: 3.5rem;
+    }
 }
 
 .navbar {
@@ -17,4 +29,10 @@
     font-size: 1.25rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 833px) {
+    .navbar {
+        visibility: hidden;
+    }
 }

@@ -9,9 +9,6 @@ html, body, #root {
 #root {
     display: flex;
     flex-direction: column;
-}
-
-.page-content {
     overflow: hidden;
 }
 
@@ -208,9 +205,9 @@ main {
 .cc-sign-language { font-family: "ccsignlanguage", sans-serif; }
 
 /* Font-Weight */
-.ft-4 { font-weight: 400; }
-.ft-5 { font-weight: 500; }
-.ft-6 { font-weight: 600; }
-.ft-7 { font-weight: 700; }
-.ft-8 { font-weight: 800; }
-.ft-9 { font-weight: 900; }
+.fw-4 { font-weight: 400; }
+.fw-5 { font-weight: 500; }
+.fw-6 { font-weight: 600; }
+.fw-7 { font-weight: 700; }
+.fw-8 { font-weight: 800; }
+.fw-9 { font-weight: 900; }
