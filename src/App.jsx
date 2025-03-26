@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router';
 
-import PageWrap from './global/PageWrap';
+import PageWrap from './global/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';

@@ -1,0 +1,27 @@
+.pronounce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pronounce-name {
+    font-size: 6rem;
+    vertical-align: 4px;
+    display: inline;
+}
+
+.pronounce-icon {
+    cursor: pointer;
+}
+
+.phonetics {
+    font-size: 2.25rem;
+    color: var(--gray);
+}
+
+.name-breakdown {
+    margin: 30% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

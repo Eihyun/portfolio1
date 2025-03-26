@@ -1,0 +1,107 @@
+.kor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kor-name {
+    position: relative;
+    font-size: 6rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.kor-letter {
+    position: absolute;
+}
+
+.kor-letter:nth-child(1) {
+    left: -200px;
+    animation: first 15s infinite ease;
+}
+
+.kor-letter:nth-child(2) {
+    left: -90px;
+    animation: second 15s infinite ease;
+}
+
+.kor-letter:nth-child(3) {
+    left: 30px;
+    animation: third 15s infinite ease;
+}
+
+.kor-letter:nth-child(4) {
+    left: 140px;
+    animation: fourth 15s infinite ease;
+}
+
+.kor-letter:nth-child(5) {
+    left: 280px;
+    animation: fifth 15s infinite ease;
+}
+
+.kor-word { 
+    opacity: 0;
+    animation: assemble 15s infinite ease;
+}
+
+.breakdown {
+    display: flex;
+    gap: 3rem;
+    animation: detail 15s infinite ease;
+}
+
+.kor-bd {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+@keyframes first {
+    25% { transform: translateX(0%); opacity: 1; }
+    40% { transform: translateX(220%); opacity:0; }
+    60% { transform: translateX(220%); opacity: 0; }
+    75%{ transform: translateX(0%); opacity: 1; }
+}
+
+@keyframes second {
+    25% { transform: translateX(0%); opacity: 1; }
+    40% { transform: translateX(140%); opacity: 0; }
+    60% { transform: translateX(140%); opacity: 0; }
+    75% { transform: translateX(0%); opacity: 1; }
+}
+
+@keyframes third {
+    25% { transform: translateX(0%); opacity: 1; }
+    40% { transform: translateX(50%); opacity: 0; }
+    60% { transform: translateX(50%); opacity: 0 }
+    75% { transform: translateX(0%); opacity: 1; }
+}
+
+@keyframes fourth {
+    25% { transform: translateX(0%); opacity: 1; }
+    40% { transform: translateX(-40%); opacity: 0; }
+    60% { transform: translateX(-40%); opacity: 0; }
+    75% { transform: translateX(0%); opacity: 1; }
+}
+
+@keyframes fifth {
+    25% { transform: translateX(0%); opacity: 1; }
+    40% { transform: translateX(-220%); opacity: 0; }
+    60% { transform: translateX(-220%); opacity: 0; }
+    75% { transform: translateX(0%); opacity: 1; }
+}
+
+@keyframes assemble {
+    25% { transform: translateX(-150%); opacity: 0; }
+    40% { opacity: 1; }
+    60% { opacity: 1; }
+    65% { transform: translateX(-150%); opacity: 0; }
+}
+
+@keyframes detail {
+    25% { opacity: 1; }
+    40% { opacity: 0; }
+    60% { opacity: 0; }
+    75% { opacity: 1; }
+}

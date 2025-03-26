@@ -1,7 +1,16 @@
+// styling
 import "./About.css";
 
-import Header from "../global/Header"
-import Footer from "../global/Footer"
+// global
+import Header from "../global/Header";
+import Footer from "../global/Footer";
+
+// components
+import Pronounce from "../assets/components/Pronounce";
+
+// images
+import myImg from "../assets/images/about-image.jpg";
+import logoMic from "../assets/images/Eihyun_mic.png";
 
 function About() {
 
@@ -9,11 +18,17 @@ function About() {
         <>
             <div className="container">
                 <div className="grid vertical-center mt-8 about-intro">
-                    <div className="col-5">
-                        <div className="placeholder"></div>
+                    <div className="col-2-lg col-4-md col-1-sm">
+                            <img src={logoMic} className="about-intro_img-logo"></img>
                     </div>
-                    <div className="col-1"></div>
-                    <div className="col-6 loos-wide fw-4 about-intro_text">
+                    <div className="col-5-lg col-8-md col-3-sm">
+                        <div className="about-intro_img-container">
+                            <img src={myImg} className="about-intro_img" alt="" />
+                        </div>
+                        
+                    </div>
+
+                    <div className="col-5-lg col-12-md col-4-sm loos-normal fw-4 about-intro_text">
                         <p>Hello! I'm Eihyun.</p>
                         <p>I’m a creative and detail-oriented <span>front-end web developer</span> with a strong foundation in Media Communications. </p>
                         <p>I have experience in video production, social media, and content strategy, which has helped me create engaging digital content that connects with people.</p>
@@ -26,8 +41,12 @@ function About() {
                 </div>
 
                 <div className="grid vertical-center mt-8 about-pronun">
-                    <div className="col-12">
-                        <h2 className="loos-wide">How to pronounce?</h2>
+                    <div className="col-12-md col-4-sm about-pronun_text">
+                        <h2 className="loos-wide fw-7">How to pronounce?</h2>
+                        <h3 className="h3 loos-normal fw-5">If you want to learn how to actually pronounce my Korean name...</h3>
+                    </div>
+                    <div className="col-12-md col-4-sm about-pronun_break">
+                        <Pronounce />
                     </div>
                 </div>
             </div>

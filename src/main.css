@@ -22,6 +22,7 @@ html, body, #root {
     --light: #FEF9F5;
     --black: #000;
     --white: #FFF;
+    --gray: #656565;
 }
 
 /* Helpers */
@@ -56,7 +57,8 @@ main {
 
 @media screen and (min-width: 320px) {
     .container {
-        max-width: 17rem;
+        min-width: 17rem;
+        width: 80vw
     }
 
     .grid {
@@ -203,6 +205,7 @@ main {
 .loos-extended { font-family: "loos-extended", sans-serif; }
 .noka { font-family: "noka", sans-serif; }
 .cc-sign-language { font-family: "ccsignlanguage", sans-serif; }
+.jjGgwak { font-family: "jjggwakchangothica", sans-serif; }
 
 /* Font-Weight */
 .fw-4 { font-weight: 400; }

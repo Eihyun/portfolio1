@@ -1,0 +1,11 @@
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0 10rem;
+    gap: 5rem;
+}
+
+.project-list_item > h4{
+    text-align: center;
+}

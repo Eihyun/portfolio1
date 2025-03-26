@@ -50,7 +50,7 @@ function AboutBtn() {
                     <span className="barcode-stripe stripe-3"></span>
                     <span className="barcode-stripe stripe-1"></span>
                 </div>
-                <div className="about-btn_text loos-compressed fw-5">How to pronounce?</div>
+                <div className="about-btn_text loos-compressed fw-5">How to pronounce <span className="loos-extrawide">Eihyun</span></div>
             </Link>
         </button>
         </>

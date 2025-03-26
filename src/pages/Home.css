@@ -1,14 +1,14 @@
 /* Banner */
 .home-banner_text {
     z-index: 10000;
-    transform: translate(0%, 30%) rotate(-24deg);
+    transform: translate(-20%, 50%) rotate(-24deg);
     user-select: none;
     text-align: right;
 }
 
 .home-banner_beKind {
     color: var(--Dark, #041334);
-    font-size: 6rem;
+    font-size: 5rem;
     text-transform: uppercase;
     position: relative;
 }
@@ -18,7 +18,7 @@
     color: transparent;
     -webkit-text-stroke-width: 7px;
     -webkit-text-stroke-color: var(--Black, #000);
-    font-size: 12.5rem;
+    font-size: 10.5rem;
     text-transform: uppercase;
     line-height: 0.8;
 }
@@ -53,6 +53,7 @@
     height: 15rem;
     width: 200vw;
     transform: translateX(-20%);
+    position: absolute;
 }
 
 @media screen and (max-width: 1439px) {
@@ -69,41 +70,49 @@
     }
 }
 
-
 .home-banner_icons {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
-    transform: translateY(60%);
+    transform: translateY(55%);
 }
 
 @media screen and (max-width: 1439px) {
     .home-banner_icons {
-        transform: translateY(80%) scale(90%);
+        transform: translateY(50%) scale(90%);
     }
 }
 
 @media screen and (max-width: 833px) {
     .home-banner_icons {
-        transform: translateY(0%) scale(90%);
+        transform: translateY(-10%) scale(70%);
     }
+}
+
+.home-banner_vhs {
+    transform: translateY(30%);
 }
 
 .home-banner_cta {
     width: 15rem;
-    height: 40%;
     position: relative;
-    right: -50rem;
-    top: 7rem;
+    top: 6rem; left: 38rem;
     display: flex;
     justify-content: center;
 }
 
 @media screen and (max-width: 1439px) {
     .home-banner_cta {
-        right: -22rem;
-        top: 15rem;
+        top: 2rem;
+        left: 17rem;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .home-banner_cta {
+        top: 2rem;
+        left: 17rem;
     }
 }
 
@@ -111,7 +120,7 @@
 .home-featured_text {
     text-align: center;
     text-transform: uppercase;
-    margin: 20% 0;
+    margin-top: 15%;
 }
 
 .home-featured_text-featured {
@@ -143,3 +152,30 @@
     }
 }
 
+@media screen and (max-width: 833px) {
+    .home-featured_text-featured {
+        font-size: 1.25rem;
+        letter-spacing: 0.8rem;
+    }
+
+    .home-featured_text-projects {
+        font-size: 2.5rem;
+    }
+}
+
+.home-featured_tv {
+    display: flex;
+    justify-content: center;
+}
+
+.home-featured_item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 10rem;
+}
+
+.home-featured_item > img {
+    width: 48%;
+}
