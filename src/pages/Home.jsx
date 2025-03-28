@@ -1,5 +1,5 @@
 // React, hook
-import Reacr, {useState} from 'react';
+import Reacr, { useState } from 'react';
 
 // styling
 import "./Home.css";
@@ -58,7 +58,7 @@ function Home() {
                     <div className="col-1-md col-1-sm home-banner_icons">
                         <Icons />
                     </div>
-                    <div className="col-4-lg col-2-md col-4-sm">
+                    <div className="col-4-lg col-2-md col-4-sm home-banner_cta-container">
                         {hoveredCta && (
                         <div className="home-banner_cta"
                         onMouseEnter={handleMouseEnter}
@@ -83,7 +83,7 @@ function Home() {
                 </div>
 
                 {/* Featured Projects */}
-                <div className="container mt-8">
+                <div className="container mt-3">
                     <div className="grid vertical-center home-featured">
                         <div className="col-12-md col-4-sm fw-8 home-featured_text">
                             <h2 className="h2 loos-extended home-featured_text-featured">Featured
@@ -95,7 +95,7 @@ function Home() {
 
                         </div>
                         
-                        <div className="col-12-md home-featured_item">
+                        <div className="col-12-md col-4-sm home-featured_item">
                             <img src={Wicked} alt="" />
                             <img src={Catoro} alt="" />
                             <img src={Yogurt} alt="" />
