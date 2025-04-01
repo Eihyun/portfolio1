@@ -51,8 +51,8 @@
 .about-intro_text > p {
     color: var(--gray);
     margin-bottom: 1.5rem;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .about-intro_text > p > span {
@@ -60,17 +60,17 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 1443px) {
+@media screen and (min-width: 834px) {
     .about-intro_text {
         margin-top: 0.75rem;
         margin-bottom: 3rem;
     }
 }
 
-@media screen and (max-width: 833px) {
+@media screen and (min-width: 1440px) {
     .about-intro_text > p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 1.25rem;
+        line-height: 2.5rem;
     }
 }
 

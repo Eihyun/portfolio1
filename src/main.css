@@ -58,7 +58,7 @@ main {
 @media screen and (min-width: 320px) {
     .container {
         min-width: 17rem;
-        width: 80vw
+        width: 50vw;
     }
 
     .grid {
@@ -74,7 +74,7 @@ main {
 
 @media screen and (min-width: 834px) {
     .container {
-        max-width: 48.125rem;
+        min-width: 48.125rem;
     }
 
     .grid {
@@ -99,7 +99,7 @@ main {
 
 @media screen and (min-width: 1440px) {
     .container {
-        max-width: 80rem;
+        min-width: 80rem;
     }
 
     .grid {
