@@ -96,7 +96,7 @@
 }
 
 .home-banner_cta {
-    visibility: hidden;
+    /* visibility: hidden; */
     width: 15rem;
     position: absolute;
     display: flex;

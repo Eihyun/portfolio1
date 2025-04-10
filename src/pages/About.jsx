@@ -1,10 +1,6 @@
 // styling
 import "./About.css";
 
-// global
-import Header from "../global/Header";
-import Footer from "../global/Footer";
-
 // components
 import Pronounce from "../assets/components/Pronounce";
 
@@ -18,17 +14,16 @@ function About() {
         <>
             <div className="container">
                 <div className="grid vertical-center mt-8 about-intro">
-                    <div className="col-2-lg col-4-md col-1-sm">
-                            <img src={logoMic} className="about-intro_img-logo"></img>
-                    </div>
                     <div className="col-5-lg col-8-md col-3-sm">
                         <div className="about-intro_img-container">
                             <img src={myImg} className="about-intro_img" alt="" />
                         </div>
-                        
+                    </div>
+                    <div className="col-1-lg col-4-md col-1-sm">
+                            <img src={logoMic} className="about-intro_img-logo"></img>
                     </div>
 
-                    <div className="col-5-lg col-12-md col-4-sm loos-normal fw-4 about-intro_text">
+                    <div className="col-6-lg col-12-md col-4-sm pretendard fw-4 about-intro_text">
                         <p>Hello! I'm Eihyun.</p>
                         <p>I’m a creative and detail-oriented <span>front-end web developer</span> with a strong foundation in Media Communications. </p>
                         <p>I have experience in video production, social media, and content strategy, which has helped me create engaging digital content that connects with people.</p>

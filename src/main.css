@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/cdm5ncv.css");
 
+
 html, body, #root {
     /* Send Footer to Bottom */
     min-height: 100vh;
@@ -10,6 +11,15 @@ html, body, #root {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+p::selection {
+    background-color: var(--dark);
+    color: white;
 }
 
 /* Colors */
@@ -57,8 +67,7 @@ main {
 
 @media screen and (min-width: 320px) {
     .container {
-        min-width: 17rem;
-        width: 50vw;
+        width: 17rem;
     }
 
     .grid {
@@ -206,6 +215,7 @@ main {
 .noka { font-family: "noka", sans-serif; }
 .cc-sign-language { font-family: "ccsignlanguage", sans-serif; }
 .jjGgwak { font-family: "jjggwakchangothica", sans-serif; }
+.pretendard { font-family: "pretendard", sans-serif; }
 
 /* Font-Weight */
 .fw-4 { font-weight: 400; }
