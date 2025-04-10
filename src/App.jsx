@@ -5,6 +5,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Logo from './pages/Logo';
+import Wicked from './pages/Wicked';
+import Yogurt from './pages/Yogurt';
+import Catoro from './pages/Catoro';
 import StyleGuide from "./pages/StyleGuide";
 
 function App() {
@@ -16,6 +19,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/logo" element={<Logo />} />
+          <Route path="/wicked" element={<Wicked />} />
+          <Route path="/yogurt" element={<Yogurt />} />
+          <Route path="/catoro" element={<Catoro />} />
+
         </Route>
       </Routes>
     </>

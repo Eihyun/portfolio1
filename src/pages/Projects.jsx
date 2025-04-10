@@ -1,8 +1,49 @@
+import { Link } from 'react-router-dom';
+
 import "./Projects.css";
 
-import Wicked from '../assets/images/project-wicked.png';
-import Catoro from '../assets/images/project-catoro.png';
-import Yogurt from '../assets/images/project-yogurt.png';
+import CardFlip from '../assets/components/CardFlip'
+
+import WickedFront from '../assets/images/project-wicked.png';
+import WickedBack from '../assets/images/project-wicked_b.png';
+import YogurtFront from '../assets/images/project-yogurt.png';
+import YogurtBack from '../assets/images/project-yogurt_b.png';
+import CatoroFront from '../assets/images/project-catoro.png';
+import CatoroBack from '../assets/images/project-catoro_b.png';
+
+
+const project = [
+    {
+        "id": "wicked",
+        "name": "Wicked Film Webpage",
+        "frontImage": "project-wicked.png",
+        "backImage": "project-wicked_b.png",
+        "link": "wicked"
+    },
+    {
+        "id": "yogurt",
+        "name": "Yogurt Yoghurt Yogurté",
+        "frontImage": "project-yogurt.png",
+        "backImage": "project-yogurt_b.png",
+        "link": "yogurt"
+    },
+    {
+        "id": "catoro",
+        "name": "Catoro Case Study",
+        "frontImage": "project-catoro.png",
+        "backImage": "project-catoro_b.png",
+        "link": "catoro"
+    }
+];
+
+const imageMap = {
+    'project-wicked.png': WickedFront,
+    'project-wicked_b.png': WickedBack,
+    'project-yogurt.png': YogurtFront,
+    'project-yogurt_b.png': YogurtBack,
+    'project-catoro.png': CatoroFront,
+    'project-catoro_b.png': CatoroBack
+};
 
 function Projects() {
 
@@ -10,19 +51,16 @@ function Projects() {
         <>
             <div className="container">
                 <div className="grid">
+                    <h1 className="col-12">Projects</h1>
                     <div className="col-12 project-list">
-                        <div className="project-list_item">
-                            <img src={Wicked} alt="" />
-                            <h4 className="noka fw-6">Wicked Film Webpage</h4>
-                        </div>
-                        <div className="project-list_item">
-                            <img src={Catoro} alt="" />
-                            <h4 className="noka fw-6">Catoro Cat Café Case Study</h4>
-                        </div>
-                        <div className="project-list_item">
-                            <img src={Yogurt} alt="" />
-                            <h4 className="noka fw-6">Yogurt Yoghurt Yogurté</h4>
-                        </div>
+
+                        {project.map(project => (
+                            <Link to={`/${project.link || project.id}`} key={project.id} className="card-link">
+                                <CardFlip project={project} imageMap={imageMap} />
+                            </Link>
+                        ))}
+
+
                     </div>
                 </div>
             </div>
