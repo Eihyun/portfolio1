@@ -97,13 +97,13 @@ function Home() {
                         </div>
                         
                         {/* <div className="col-12-md col-4-sm home-featured_item"> */}
-                            <Link to={"/wicked"} className="col-6-md col-4-sm">
+                            <Link to={"/wicked"} className="col-6-md col-4-sm home-featured_item">
                                 <img src={Wicked} alt="" />
                             </Link>
-                            <Link to={"/yogurt"} className="col-6-md col-4-sm">
+                            <Link to={"/yogurt"} className="col-6-md col-4-sm home-featured_item">
                                 <img src={Yogurt} alt="" />
                             </Link>
-                            <Link to={"/catoro"} className="col-6-md col-4-sm">
+                            <Link to={"/catoro"} className="col-6-md col-4-sm home-featured_item">
                                 <img src={Catoro} alt="" />
                             </Link>
                         {/* </div> */}

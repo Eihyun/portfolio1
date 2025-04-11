@@ -45,7 +45,7 @@ main {
 /* Grid System */
 .container {
     margin: 0 auto;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
 
 .grid {
