@@ -119,7 +119,7 @@
 }
 
 .home-banner_vhs {
-    transform: translateY(-70%);
+    transform: translateY(-50%);
 }
 
 @media screen and (min-width: 834px) {
@@ -179,19 +179,14 @@
     display: flex;
     justify-content: center;
 }
-
+/* 
 .home-featured_item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
     margin-bottom: 10rem;
-}
-
-
-.home-featured_item > img {
-    width: 100%;
-}
+} */
 
 @media screen and (min-width: 834px) {
     .home-featured_item > img {

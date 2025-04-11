@@ -51,8 +51,8 @@ function Projects() {
         <>
             <div className="container">
                 <div className="grid">
-                    <h1 className="col-12">Projects</h1>
-                    <div className="col-12 project-list">
+                    <h1 className="col-12-md col-4-sm project-page_title noka fw-6">Featured Projects</h1>
+                    <div className="col-12-md col-4-sm project-list">
 
                         {project.map(project => (
                             <Link to={`/${project.link || project.id}`} key={project.id} className="card-link">

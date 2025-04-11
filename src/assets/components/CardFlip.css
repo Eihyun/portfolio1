@@ -24,3 +24,8 @@
     transform: rotateY(180deg);
 }
 
+.flip-card h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+

@@ -5,9 +5,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Logo from './pages/Logo';
-import Wicked from './pages/Wicked';
-import Yogurt from './pages/Yogurt';
-import Catoro from './pages/Catoro';
+import Wicked from './pages/projects/Wicked';
+import Yogurt from './pages/projects/Yogurt';
+import Catoro from './pages/projects/Catoro';
 import StyleGuide from "./pages/StyleGuide";
 
 function App() {
