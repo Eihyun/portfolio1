@@ -1,5 +1,6 @@
 // React, hook
-import Reacr, { useState } from 'react';
+import React, { useState } from 'react';
+import { Link } from "react-router";
 
 // styling
 import "./Home.css";
@@ -91,15 +92,21 @@ function Home() {
                             </h2>
                         </div>
                         <div className="col-12-md col-4-sm home-featured_tv">
-                            <img src={HomeTv} alt="" />
+                            {/* <img src={HomeTv} alt="" /> */}
 
                         </div>
                         
-                        <div className="col-12-md col-4-sm home-featured_item">
-                            <img src={Wicked} alt="" />
-                            <img src={Catoro} alt="" />
-                            <img src={Yogurt} alt="" />
-                        </div>
+                        {/* <div className="col-12-md col-4-sm home-featured_item"> */}
+                            <Link to={"/wicked"} className="col-6-md col-4-sm">
+                                <img src={Wicked} alt="" />
+                            </Link>
+                            <Link to={"/yogurt"} className="col-6-md col-4-sm">
+                                <img src={Yogurt} alt="" />
+                            </Link>
+                            <Link to={"/catoro"} className="col-6-md col-4-sm">
+                                <img src={Catoro} alt="" />
+                            </Link>
+                        {/* </div> */}
                     </div>
                 </div>
             </div>

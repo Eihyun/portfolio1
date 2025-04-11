@@ -6,6 +6,7 @@ import Pronounce from "../assets/components/Pronounce";
 
 // images
 import myImg from "../assets/images/about-image.jpg";
+import myImg2 from "../assets/images/about-image2.png";
 import logoMic from "../assets/images/Eihyun_mic.png";
 
 function About() {
@@ -13,10 +14,10 @@ function About() {
     return(
         <>
             <div className="container">
-                <div className="grid vertical-center mt-8 about-intro">
+                <div className="grid vertical-center mt-4 about-intro">
                     <div className="col-5-lg col-8-md col-3-sm">
                         <div className="about-intro_img-container">
-                            <img src={myImg} className="about-intro_img" alt="" />
+                            <img src={myImg2} className="about-intro_img" alt="" />
                         </div>
                     </div>
                     <div className="col-1-lg col-4-md col-1-sm">

@@ -13,6 +13,10 @@
 }
 
 @media screen and (min-width: 834px) {
+    .site-header {
+        padding: 4rem 0;
+    }
+
     .site-header__logo {
         max-width: 6rem;
     }
@@ -30,10 +34,90 @@
     font-weight: 700;
     text-transform: uppercase;
     visibility: hidden;
+    /* position: relative; */
 }
 
 @media screen and (min-width: 834px) {
     .navbar {
         visibility: visible;
     }
+}
+
+
+/* Hamburger */
+.hamburger-menu {
+    /* background-color: gray; */
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.hamburger {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    top: -1rem;
+    left: 10rem;
+    border-radius: 9999px;
+    /* background-color: rgba(0, 0, 0, 100); */
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.hamburger-bar {
+    position: absolute;
+    height: 0.2rem;
+    width: 2rem;
+    background-color: black;
+    z-index: 100;
+    border-radius: 3px;
+}
+
+.hamburger-bar:nth-child(1) {
+    left: 20%;
+    top: 35%;
+}
+.hamburger-bar:nth-child(2) {
+    width: 2.8rem;
+    left: 10%;
+    top: 50%;
+}
+.hamburger-bar:nth-child(3) {
+    left: 20%;
+    top: 65%;
+}
+
+@media screen and (min-width: 834px) {
+    .hamburger-menu, .hamburger, .hamburger-bar {
+        display: none;
+    }
+}
+
+.hamburger-bg{
+    position: fixed;
+    width: 130vw;
+    height: 130vh;
+    z-index: 10;
+    transform: translate(-60%, -30%) scale(0%);
+    transform-origin: 72% 8%;
+}
+
+.hamburger-navbar {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.hamburger-navbar li {
+    position: relative;
+    z-index: 100;
+    font-size: 6vw;
+    width: 70vw;
+    text-transform: uppercase;
 }

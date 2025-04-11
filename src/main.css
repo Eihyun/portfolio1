@@ -67,7 +67,7 @@ main {
 
 @media screen and (min-width: 320px) {
     .container {
-        width: 17rem;
+        width: 20rem;
     }
 
     .grid {

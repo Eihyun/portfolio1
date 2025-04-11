@@ -5,9 +5,10 @@ import './Pronounce.css';
 import { RiVolumeUpFill } from '@remixicon/react';
 import KorName from './KorName';
 import fartSfx from '../audio/fart.mp3';
+import EihyunSfx from '../audio/Eihyun.mp3';
 
 const Pronounce = () => {
-    const [play] = useSound(fartSfx);
+    const [play] = useSound(EihyunSfx);
 
     return (
         <>
