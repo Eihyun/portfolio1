@@ -6,7 +6,7 @@ import Pronounce from "../assets/components/Pronounce";
 
 // images
 import myImg from "../assets/images/about-image.jpg";
-import myImg2 from "../assets/images/about-image2.png";
+import myImg2 from "../assets/images/about-image2.jpeg";
 import logoMic from "../assets/images/Eihyun_mic.png";
 
 function About() {

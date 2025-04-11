@@ -15,11 +15,11 @@ function Catoro() {
                         <img src={CatoroPreview} alt="" />
                     </div>
                     <a href="" className="col-3-md col-2-sm col-1-sm repository">
-                        <img src={TagHole} alt="" />
+                        <img src={TagHole} className="tag-hole"  alt="" />
                         <div className="repository-text noka fw-6">Code</div>
                     </a>
                     <a href="" className="col-3-md col-2-sm col-1-sm live-site">
-                        <img src={TagHole} alt="" />
+                        <img src={TagHole} className="tag-hole"  alt="" />
                         <div className="live-site_text noka fw-6">Live site</div>
                     </a>
                     <div className="col-6-md col-4-sm project-title">
@@ -61,10 +61,9 @@ function Catoro() {
 
                         <div className="challenges pretendard">
                             <h3 className="fw-8">Competitive Analysis</h3>
-                            <img src={CatoroCompetitiveAnalysis} alt="" />
                             <p>The current adoption process on the Catoro Cat Café website suffers from inconsistent navigation, a lack of visual cohesion, and an outdated form design.</p>
-                            <p>A review of competitor platforms such as the BC SPCA and Adopt a Pet highlights several best practices: clean, intuitive navigation, visually appealing layouts. 
-                            </p>
+                            <img src={CatoroCompetitiveAnalysis} alt="" />
+                            <p>A review of competitor platforms such as the BC SPCA and Adopt a Pet highlights several best practices: clean, intuitive navigation, visually appealing layouts.</p>
                             <p>Competitors also excel in offering filters to help users find pets that match their preferences quickly. These insights emphasize the need for Catoro to adopt a cohesive design language, simplify the adoption process, and enhance the user experience with visual and functional updates.</p>
                         </div>
 

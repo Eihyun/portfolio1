@@ -14,16 +14,16 @@ function Yogurt() {
                         <img src={YogurtPreview} alt="" />
                     </div>
                     <a href="https://github.com/Eihyun/MDIA2294-TermProject" target="_blank"  className="col-3-md col-2-sm repository">
-                        <img src={TagHole} alt="" />
+                        <img src={TagHole} className="tag-hole"  alt="" />
                         <div className="repository-text noka fw-6">Github</div>
                     </a>
                     <a href="https://yogurt.eihyunkim.com/" target="_blank"  className="col-3-md col-2-sm live-site">
-                        <img src={TagHole} alt="" />
+                        <img src={TagHole} className="tag-hole"  alt="" />
                         <div className="live-site_text noka fw-6">Live site</div>
                     </a>
                     <div className="col-6-md col-4-sm project-title">
                         <div className="project-title_container noka fw-8">Project Name
-                            <h2 className="project-title_text pretendard fw-6">Wicked Film Webpage</h2>
+                            <h2 className="project-title_text pretendard fw-6">Yogurt Yoghurt Yogurté</h2>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ function Yogurt() {
                 <div className="grid vertical-center project-detail_container">
                     <div className="col-12 project-detail">
                         <div className="overview pretendard">
-                            <p>I designed and developed a responsive, mobile-first website for <span>a fictional frozen yogurt shop called Yogurt Yoghurt Yoghurt Yogurté</span>, inspired by its appearance on the tv series <span>The Good Place</span>. The website needed to showcase various frozen yogurt flavors, provide contact information, and ensure a seamless user experience across mobile, tablet and desktop devices. </p>
+                            <p>I designed and developed a responsive, mobile-first website for <span>a fictional frozen yogurt shop called Yogurt Yoghurt Yogurté</span>, inspired by its appearance on the tv series <span>The Good Place</span>. The website needed to showcase various frozen yogurt flavors, provide contact information, and ensure a seamless user experience across mobile, tablet and desktop devices. </p>
                             <p>The project aimed to incorporate web design best practices, such as using wireframes, implementing responsive design with a grid system, and incorporating JavaScript plugins to enhance interactivity.</p>
                         </div>
 
