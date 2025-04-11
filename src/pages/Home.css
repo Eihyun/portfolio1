@@ -139,12 +139,12 @@
     font-size: 1.25rem;
     letter-spacing: 0.8rem;
     color: var(--Secondary, #30524B);
-    margin-left: 2rem;
+    margin-left: 1.2rem;
 }
 
 .home-featured_text-projects {
     display: inline-block;
-    margin-right: 2.3rem;
+    margin-right: 0.8rem;
     font-size: 2.5rem;
     color: var(--Dark, #041334);
     letter-spacing: normal;
@@ -172,6 +172,7 @@
 
     .home-featured_text-projects {
         font-size: 8rem;
+        margin-right: 2.2rem;
     }
 }
 
@@ -190,6 +191,6 @@
 
 @media screen and (min-width: 834px) {
     .home-featured_item > img {
-        width: 48%;
+        width: 100%;
     }
 }
