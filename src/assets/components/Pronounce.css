@@ -2,6 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    scale: 80%;
+}
+
+@media screen and (min-width: 834px) {
+    .pronounce {
+        scale: 100%;
+    }
 }
 
 .pronounce-name {
