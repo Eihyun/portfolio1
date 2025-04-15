@@ -13,11 +13,11 @@ function Yogurt() {
                     <div className="col-12-md col-4-sm mt-4 project-preview">
                         <img src={YogurtPreview} alt="" />
                     </div>
-                    <a href="https://github.com/Eihyun/MDIA2294-TermProject" target="_blank"  className="col-3-md col-2-sm repository">
+                    <a href="https://github.com/Eihyun/MDIA2294-TermProject" target="_blank" className="col-3-md col-2-sm repository">
                         <img src={TagHole} className="tag-hole"  alt="" />
                         <div className="repository-text noka fw-6">Github</div>
                     </a>
-                    <a href="https://yogurt.eihyunkim.com/" target="_blank"  className="col-3-md col-2-sm live-site">
+                    <a href="https://yogurt.eihyunkim.com/" target="_blank" className="col-3-md col-2-sm live-site">
                         <img src={TagHole} className="tag-hole"  alt="" />
                         <div className="live-site_text noka fw-6">Live site</div>
                     </a>

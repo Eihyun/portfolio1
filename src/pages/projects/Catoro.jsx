@@ -14,11 +14,11 @@ function Catoro() {
                     <div className="col-12-md col-4-sm mt-4 project-preview">
                         <img src={CatoroPreview} alt="" />
                     </div>
-                    <a href="" className="col-3-md col-2-sm col-1-sm repository">
+                    <a className="col-3-md col-2-sm col-1-sm repository">
                         <img src={TagHole} className="tag-hole"  alt="" />
                         <div className="repository-text noka fw-6">-</div>
                     </a>
-                    <a href="https://www.figma.com/proto/uKaGj9GKsSAi9GxwqsHjDF/UIUX-Project2?page-id=1%3A9&node-id=1-10&scaling=scale-down-width&content-scaling=fixed&t=KVGFabMX11TZNzlX-1" className="col-3-md col-2-sm col-1-sm live-site">
+                    <a href="https://www.figma.com/proto/uKaGj9GKsSAi9GxwqsHjDF/UIUX-Project2?page-id=1%3A9&node-id=1-10&scaling=scale-down-width&content-scaling=fixed&t=KVGFabMX11TZNzlX-1" className="col-3-md col-2-sm col-1-sm live-site" target='_blank'>
                         <img src={TagHole} className="tag-hole"  alt="" />
                         <div className="live-site_text noka fw-6">Figma</div>
                     </a>
