@@ -106,6 +106,12 @@ function Home() {
                             <Link to={"/catoro"} className="col-6-md col-4-sm home-featured_item">
                                 <img src={Catoro} alt="" />
                             </Link>
+
+                            <Link to={"/projects"}>
+                                <button>
+                                    View More
+                                </button>
+                            </Link>
                         {/* </div> */}
                     </div>
                 </div>

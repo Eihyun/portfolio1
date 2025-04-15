@@ -1,6 +1,6 @@
 import "./ProjectDetail.css";
 
-import WickedPreview from '../../assets/images/Wicked_Preview.png';
+import WickedPreview from '../../assets/images/Wicked_Preview.jpeg';
 import TagHole from '../../assets/images/tag-hole.svg';
 
 function Wicked() {

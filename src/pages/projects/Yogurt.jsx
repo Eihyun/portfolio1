@@ -1,6 +1,6 @@
 import "./ProjectDetail.css";
 
-import YogurtPreview from '../../assets/images/Yogurt_Preview.png';
+import YogurtPreview from '../../assets/images/Yogurt_Preview.jpeg';
 import TagHole from '../../assets/images/tag-hole.svg';
 
 function Yogurt() {

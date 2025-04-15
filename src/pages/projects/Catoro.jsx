@@ -1,8 +1,8 @@
 import "./ProjectDetail.css";
 
-import CatoroPreview from '../../assets/images/Catoro_Preview.png';
-import CatoroDesignOverview from '../../assets/images/Catoro_DesignOverview.png';
-import CatoroCompetitiveAnalysis from '../../assets/images/Catoro_CompetitiveAnalysis.png';
+import CatoroPreview from '../../assets/images/Catoro_Preview.jpeg';
+import CatoroDesignOverview from '../../assets/images/Catoro_DesignOverview.jpeg';
+import CatoroCompetitiveAnalysis from '../../assets/images/Catoro_CompetitiveAnalysis.jpeg';
 import TagHole from '../../assets/images/tag-hole.svg';
 
 function Catoro() {
@@ -16,11 +16,11 @@ function Catoro() {
                     </div>
                     <a href="" className="col-3-md col-2-sm col-1-sm repository">
                         <img src={TagHole} className="tag-hole"  alt="" />
-                        <div className="repository-text noka fw-6">Code</div>
+                        <div className="repository-text noka fw-6">-</div>
                     </a>
-                    <a href="" className="col-3-md col-2-sm col-1-sm live-site">
+                    <a href="https://www.figma.com/proto/uKaGj9GKsSAi9GxwqsHjDF/UIUX-Project2?page-id=1%3A9&node-id=1-10&scaling=scale-down-width&content-scaling=fixed&t=KVGFabMX11TZNzlX-1" className="col-3-md col-2-sm col-1-sm live-site">
                         <img src={TagHole} className="tag-hole"  alt="" />
-                        <div className="live-site_text noka fw-6">Live site</div>
+                        <div className="live-site_text noka fw-6">Figma</div>
                     </a>
                     <div className="col-6-md col-4-sm project-title">
                         <div className="project-title_container noka fw-8">Project Name
