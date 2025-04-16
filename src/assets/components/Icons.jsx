@@ -16,13 +16,13 @@ function Icons() {
                 >
                     {hoveredIcon === 'linkedin' ? (
                         <RiLinkedinBoxFill
-                            size={40} 
+                            size={50} 
                             color="var(--primary)" 
                             className="banner-icon" 
                         />
                     ) : (
                         <RiLinkedinBoxLine
-                            size={40} 
+                            size={50} 
                             color="var(--primary)" 
                             className="banner-icon" 
                         />
@@ -37,13 +37,13 @@ function Icons() {
                 >
                     {hoveredIcon === 'instagram' ? (
                         <RiInstagramFill
-                            size={40} 
+                            size={50} 
                             color="var(--primary)" 
                             className="banner-icon" 
                         />
                     ) : (
                         <RiInstagramLine
-                            size={40} 
+                            size={50} 
                             color="var(--primary)" 
                             className="banner-icon" 
                         />
@@ -58,13 +58,13 @@ function Icons() {
                 >
                     {hoveredIcon === 'github' ? (
                         <RiGithubFill
-                            size={40} 
+                            size={50} 
                             color="var(--primary)" 
                             className="banner-icon" 
                         />
                     ) : (
                         <RiGithubLine
-                            size={40} 
+                            size={50} 
                             color="var(--primary)" 
                             className="banner-icon" 
                         />

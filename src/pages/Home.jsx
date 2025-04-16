@@ -107,12 +107,14 @@ function Home() {
                                 <img src={Catoro} alt="" />
                             </Link>
 
-                            <Link to={"/projects"}>
-                                <button>
-                                    View More
-                                </button>
-                            </Link>
                         {/* </div> */}
+                        <div className="project-cta col-12-md col-4-sm mt-5 mb-8">
+                            <Link to={"/projects"}>
+                                <div className="view-more loos-compressed">
+                                    View More
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

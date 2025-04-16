@@ -14,13 +14,6 @@ import CatoroBack from '../assets/images/project-catoro_b.png';
 
 const project = [
     {
-        "id": "wicked",
-        "name": "Wicked Film Webpage",
-        "frontImage": "project-wicked.png",
-        "backImage": "project-wicked_b.png",
-        "link": "wicked"
-    },
-    {
         "id": "yogurt",
         "name": "Yogurt Yoghurt Yogurté",
         "frontImage": "project-yogurt.png",
@@ -33,7 +26,14 @@ const project = [
         "frontImage": "project-catoro.png",
         "backImage": "project-catoro_b.png",
         "link": "catoro"
-    }
+    },
+    {
+        "id": "wicked",
+        "name": "Wicked Film Webpage",
+        "frontImage": "project-wicked.png",
+        "backImage": "project-wicked_b.png",
+        "link": "wicked"
+    },
 ];
 
 const imageMap = {
@@ -51,7 +51,7 @@ function Projects() {
         <>
             <div className="container">
                 <div className="grid">
-                    <h1 className="col-12-md col-4-sm project-page_title noka fw-6">Featured Projects</h1>
+                    <h1 className="col-12-md col-4-sm project-page_title loos-wide fw-6">Featured Projects</h1>
                     <div className="col-12-md col-4-sm project-list">
 
                         {project.map(project => (

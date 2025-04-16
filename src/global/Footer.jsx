@@ -8,7 +8,7 @@ function Footer() {
         <>
             <footer className="site-footer">
                 <div className="container">
-                    <div className="grid mb-3">
+                    <div className="grid mt-3 mb-3">
                         <div className="col-8-md col-2-sm noka">
                             <a href="mailto:keh7370@gmail.com">
                             Email Eihyun: keh7370@gmail.com
