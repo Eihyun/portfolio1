@@ -82,7 +82,7 @@ const AnimatedHamburgerButton = () => {
                     closed: {
                         backgroundColor: "transparent",
                         scale: "0%",
-                        translateX: "-70%",
+                        translateX: "-68%",
                         translateY: "-7%",
                         display: "none",
                         visibility: "hidden",

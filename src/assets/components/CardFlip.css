@@ -1,8 +1,17 @@
 .flip-card {
-    width: 40rem;
-    height: 20rem;
+    width: 20rem;
+    height: 10rem;
     perspective: 1000px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 834px) {
+    .flip-card {
+        width: 40rem;
+        height: 20rem;
+        perspective: 1000px;
+        cursor: pointer;
+    }
 }
 
 .flip-card-inner {
@@ -24,8 +33,13 @@
     transform: rotateY(180deg);
 }
 
-.flip-card h2 {
+.flip-card_name {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
+@media screen and (min-width: 834px) {
+    .flip-card_name {
+        font-size: 1.5rem;
+    }
+}

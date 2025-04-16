@@ -38,15 +38,13 @@ const CardFlip = ({ project, imageMap }) => {
                 className="flip-card-front"
                 style={{ backgroundImage: `url(${imageMap[project.frontImage]})` }}
                     >
-
                 </div>
-
                 <div
                     className="flip-card-back"
                     style={{ backgroundImage: `url(${imageMap[project.backImage]})` }}
                 />
             </motion.div>
-            <h2 className="noka fw-6">{project.name}</h2>
+            <h2 className="flip-card_name noka fw-6 mt-2">{project.name}</h2>
         </div>
     );
         };

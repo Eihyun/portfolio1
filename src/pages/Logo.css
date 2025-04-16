@@ -1,4 +1,42 @@
-.logo-container {
+.logo-title {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 834px) {
+    .logo-title {
+        font-size: 3rem;
+    }
+}
+
+.logo-sketch {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 30% 50%;
+}
+
+.logo-ver {
+    height: 15rem;
+}
+
+@media screen and (min-width: 834px) {
+    .logo-ver {
+        height: 20rem;
+    }
+}
+
+.logo-ver img {
+    max-height: 100%;
+}
+
+.logo-animation {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (min-width: 834px) {
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
+
