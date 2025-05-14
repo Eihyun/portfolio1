@@ -60,13 +60,13 @@
 @media screen and (min-width: 834px) {
 
     .home-banner_rainbow {
-        height: 8.5rem;
+        height: 8rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .home-banner_rainbow {
-        height: 15rem;
+        height: 10rem;
         transform: translateX(-20%);
     }
 }

@@ -15,7 +15,7 @@ function About() {
         <>
             <div className="container">
                 <div className="grid vertical-center mt-4 about-intro">
-                    <div className="col-5-lg col-8-md col-3-sm">
+                    <div className="col-5-lg col-8-md col-3-sm mb-4">
                         <div className="about-intro_img-container">
                             <img src={myImg2} className="about-intro_img" alt="" />
                         </div>

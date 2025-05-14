@@ -8,6 +8,7 @@ function Wicked() {
     return(
         <>
             <div className="container">
+                {/* Project Overview */}
                 <div className="grid vertical-center project-preview_container">
                     <div className="col-12-md col-4-sm mt-4 project-preview">
                         <img src={WickedPreview} alt="" />
@@ -27,6 +28,7 @@ function Wicked() {
                     </div>
                 </div>
 
+                {/* Project Detail */}
                 <div className="grid vertical-center project-detail_container">
                     <div className="col-12 project-detail">
                         <div className="overview pretendard">
