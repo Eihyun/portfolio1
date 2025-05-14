@@ -109,7 +109,9 @@ function Home() {
 
                         {/* </div> */}
                         <div className="project-cta col-12-md col-4-sm mt-5 mb-8">
-                            <Link to={"/projects"}>
+                            <Link to={"/projects"} onClick={() => {
+                                window.scroll(0,0)
+                            }} >
                                 <div className="view-more loos-compressed">
                                     View More
                                 </div>

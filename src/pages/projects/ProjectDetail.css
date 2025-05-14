@@ -11,7 +11,8 @@
 }
 
 .tag-hole {
-    width: 30%;
+    width: 20%;
+    margin: 0.5rem 0 0.3rem;
 }
 
 .repository, .live-site {
@@ -34,7 +35,7 @@
 }
 
 .repository img, .live-site img {
-    margin: 1rem 0 0.3rem;
+    margin: 0.5rem 0 0;
 }
 
 .project-title {
@@ -74,6 +75,10 @@
         height: 100%;
     }
 
+    .repository img, .live-site img {
+        margin: 1rem 0 0.3rem;
+    }
+
     .project-title_container {
         font-size: 1.5rem;
     }
@@ -85,8 +90,16 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .tag-hole {
+        width: 30%;
+    }
+
     .repository, .live-site {
         font-size: 2rem;
+    }
+
+    .repository img, .live-site img {
+        margin: 1rem 0 0.3rem;
     }
 
     .project-title_container {

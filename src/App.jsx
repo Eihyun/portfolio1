@@ -9,6 +9,7 @@ import Wicked from './pages/projects/Wicked';
 import Yogurt from './pages/projects/Yogurt';
 import Catoro from './pages/projects/Catoro';
 import StyleGuide from "./pages/StyleGuide";
+import PageNotFound from "./pages/404Page";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="/wicked" element={<Wicked />} />
           <Route path="/yogurt" element={<Yogurt />} />
           <Route path="/catoro" element={<Catoro />} />
-
+          <Route path="*"  element={<PageNotFound />} />
         </Route>
       </Routes>
     </>
