@@ -1,9 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-import {  RiLinkedinBoxLine, RiLinkedinBoxFill, RiInstagramLine, RiInstagramFill, RiGithubLine, RiGithubFill } from '@remixicon/react'
+import { 
+    RiLinkedinBoxLine, 
+    RiLinkedinBoxFill, 
+    RiInstagramLine, 
+    RiInstagramFill, 
+    RiGithubLine, 
+    RiGithubFill 
+} from '@remixicon/react'
 
 function Icons() {
-    const [hoveredIcon, setHoveredIcon] = useState(false);
+    const [hoveredIcon, setHoveredIcon] = useState(null);
 
     return(
         <>
@@ -26,8 +33,7 @@ function Icons() {
                             color="var(--primary)" 
                             className="banner-icon" 
                         />
-                    )
-                }
+                    )}
                 </a>
                 <a href="https://www.instagram.com/eihyunkim/" 
                     target='_blank' 
@@ -47,10 +53,9 @@ function Icons() {
                             color="var(--primary)" 
                             className="banner-icon" 
                         />
-                    )
-                }
+                    )}
                 </a>
-                <a href="https://www.github.com/Eihyun/" 
+                <a href="https://github.com/Eihyun/" 
                     target='_blank' 
                     rel="noopener noreferrer"
                     onMouseEnter={() => setHoveredIcon('github')}
@@ -68,8 +73,7 @@ function Icons() {
                             color="var(--primary)" 
                             className="banner-icon" 
                         />
-                    )
-                }
+                    )}
                 </a>
             </div>
         </>

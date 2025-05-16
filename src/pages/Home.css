@@ -1,52 +1,54 @@
 /* Banner */
 .home-banner_text {
     z-index: 10000;
-    transform: translate(-10%, 30%) rotate(-24deg);
+    transform: translate(-15%, 10%) rotate(-24deg);
     user-select: none;
     text-align: right;
 }
 
 .home-banner_beKind {
     color: var(--Dark, #041334);
-    font-size: 1.8rem;
-
+    font-size: 3rem;
     text-transform: uppercase;
     position: relative;
+    line-height: 1;
 }
 
-.home-banner_sayHi {
+.home-banner_span {
     display: inline-block;
     color: transparent;
-    font-size: 3.8rem;
+    font-size: 3.125rem;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--Black, #000);
-    text-transform: uppercase;
-    line-height: 0.8;
 }
 
 @media screen and (min-width: 834px) {
-    .home-banner_beKind {
-        font-size: 3.5rem;
-    }
-
-    .home-banner_sayHi {
-        font-size: 7rem;
-        -webkit-text-stroke-width: 4px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
     .home-banner_text {
-        transform: translate(-20%, 50%) rotate(-24deg);
+        transform: translate(-10%, 20%) rotate(-24deg);
     }
 
     .home-banner_beKind {
         font-size: 5rem;
     }
 
-    .home-banner_sayHi {
-        -webkit-text-stroke-width: 7px;
-        font-size: 10.5rem;
+    .home-banner_span {
+        font-size: 5.25rem;
+        -webkit-text-stroke-width: 3px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .home-banner_text {
+        transform: translate(-15%, 50%) rotate(-24deg);
+    }
+
+    .home-banner_beKind {
+        font-size: 8rem;
+    }
+
+    .home-banner_span {
+        font-size: 8.5rem;
+        -webkit-text-stroke-width: 5px;
     }
 }
 
@@ -124,7 +126,7 @@
 
 @media screen and (min-width: 834px) {
     .home-banner_vhs {
-        transform: translateY(25%);
+        transform: translateY(35%);
     }
 }
 
