@@ -42,14 +42,14 @@ function Home() {
                     <div className="col-8-md col-4-sm">
                         <div className="home-banner_text">
 
-                            <h2 className="h2 loos-extended fw-8 home-banner_beKind">
+                            <h2 className="h2 kyrial fw-8 home-banner_beKind">
                             {/* <FuzzyText baseIntensity={0.18} > */}
                                 Be Kind, 
                             {/* </FuzzyText> */}
-                                <span className="loos-wide fw-8 home-banner_sayHi">Say Hi</span>
+                                <span className="kyrial-cond fw-9 home-banner_span">build minds</span>
                             </h2>
 
-                            <div className="home-banner_rainbow">
+                            <div className="home-banner_rainbow mt-2">
                                 <RainbowBar />
                             </div>
                         </div>
@@ -65,7 +65,7 @@ function Home() {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                         >
-                            <Magnet padding={500} disabled={false} magnetStrength={20}>
+                            <Magnet padding={400} disabled={false} magnetStrength={20}>
                                 <AboutBtn />
                             </Magnet>
                         </div>
