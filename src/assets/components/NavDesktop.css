@@ -1,0 +1,22 @@
+.nav-container {
+    position: static;
+    top: 0; left: 0;
+    background-color: transparent;
+    /* background-color: gray; */
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    position: relative;
+}
+
+.navbar {
+    display: flex;        
+    flex-direction: column;
+    writing-mode: horizontal-tb;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    flex-direction: row;
+}
