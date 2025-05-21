@@ -4,8 +4,8 @@
 
 .site-header ul {
     display: flex;
-    gap: 5rem;
-    justify-content: end;
+    gap: 0.8rem;
+    justify-content: center;
 }
 
 .site-header__logo {
@@ -15,6 +15,11 @@
 @media screen and (min-width: 834px) {
     .site-header {
         padding: 2rem 0;
+    }
+
+    .site-header ul {
+        gap: 5rem;
+        justify-content: end;
     }
 
     .site-header__logo {
