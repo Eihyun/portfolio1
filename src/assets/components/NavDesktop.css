@@ -15,8 +15,30 @@
 .navbar {
     display: flex;        
     flex-direction: column;
+    align-items: center;
     writing-mode: horizontal-tb;
     font-size: 1.25rem;
     text-transform: uppercase;
     flex-direction: row;
+}
+
+.nav-logo-icon {
+    height: 6rem;
+    vertical-align: middle;
+}
+
+.home-logo {
+    width: 4rem;
+}
+
+.about-logo {
+    width: 5rem;
+}
+
+.projects-logo {
+    width: 6.5rem;
+}
+
+.crafts-logo {
+    width: 5rem;
 }

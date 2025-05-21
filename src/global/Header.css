@@ -18,7 +18,7 @@
     }
 
     .site-header ul {
-        gap: 5rem;
+        gap: 4rem;
         justify-content: end;
     }
 
@@ -31,4 +31,9 @@
     .site-header__logo {
         max-width: 7rem;
     }
+
+    .site-header ul {
+        gap: 5rem;
+    }
+
 }

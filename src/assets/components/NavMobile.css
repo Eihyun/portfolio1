@@ -7,7 +7,6 @@
     align-items: center;
 }
 
-
 /* Hamburger button */
 .hamburger {
     display: flex;
@@ -41,7 +40,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-color: #303030; /* Update to match your theme */
     display: flex;
     flex-direction: column;
@@ -75,9 +74,9 @@
 }
 
 .nav-home, .nav-about, .nav-projects, .nav-crafts {
-    width: 3.125rem;
-    height: 24.3125rem;
-    
+    width: 3.25rem;
+    height: 25.285rem;
+    background-size: 100%;
 }
 
 .nav-home, .nav-about {
@@ -117,11 +116,12 @@
 }
 
 .nav-crafts {
+    transform: rotate(0deg);
     transform-origin: bottom center;
-    transition: transform 0.3s ease 0s, left 0.3s ease 0s;
-    left: 0.5rem;
+    transition: transform 1s ease-in-out;
+    left: 0.7rem;
 }
-.nav-crafts.active {
+
+.nav-crafts.rotate {
     transform: rotate(-3deg);
-    transition-delay: 1s; /* apply only to transform */
 }

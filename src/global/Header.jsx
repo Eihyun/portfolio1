@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
+import submark from "../assets/images/Eihyun_submark.svg";
 import useMediaQuery from "../hooks/useMediaQuery";
 
 import NavDesktop from "../assets/components/NavDesktop";
@@ -16,7 +17,7 @@ function Header() {
                 <div className="grid vertical-center">
                     <div className="col-3-md col-1-sm">
                         <Link to="/">
-                            <img src={logo} className="site-header__logo" alt="Logo" />
+                            <img src={submark} className="site-header__logo" alt="Logo" />
                         </Link>
                     </div>
                     <div className="header-nav col-9-md col-3-sm">
