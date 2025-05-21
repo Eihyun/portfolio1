@@ -84,7 +84,7 @@ function Home() {
                 </div>
 
                 {/* Featured Projects */}
-                <div className="container mt-3">
+                <div className="container mt-8">
                     <div className="grid vertical-center home-featured">
                         <div className="col-12-md col-4-sm fw-8 home-featured_text">
                             <h2 className="h2 loos-extended home-featured_text-featured">Featured
