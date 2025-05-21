@@ -1,4 +1,4 @@
-import './Logo.css';
+import './Crafts.css';
 import LogoRough from '../assets/images/Logo_Rough.jpeg';
 import LogoSketch1 from '../assets/images/Logo_Sketch1.jpeg';
 import LogoSketch2 from '../assets/images/Logo_Sketch2.jpeg';
@@ -8,7 +8,7 @@ import LogoLaptop from "../assets/images/Eihyun_laptop.svg";
 import LogoMic from "../assets/images/Eihyun_mic.svg";
 
 
-function Logo() {
+function Crafts() {
 
     return(
         <>
@@ -82,4 +82,4 @@ function Logo() {
 
 }
 
-export default Logo;
+export default Crafts;
