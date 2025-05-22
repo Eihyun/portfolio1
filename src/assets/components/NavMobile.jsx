@@ -90,7 +90,7 @@ function NavMobile() {
                             transition={{ delay: 0.5, duration: 0.6, ease: "easeInOut"}}
                             style={{ transformOrigin: 'bottom center' }}
                         >
-                            <Link className='nav-crafts' to="/logo" onClick={closeMenu}>Crafts</Link>
+                            <Link className='nav-crafts' to="/crafts" onClick={closeMenu}>Crafts</Link>
                         </motion.li>
                     </motion.ul>
                 )}
