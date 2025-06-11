@@ -27,13 +27,13 @@ const project = [
         "backImage": "project-catoro_b.png",
         "link": "catoro"
     },
-    {
-        "id": "wicked",
-        "name": "Wicked Film Webpage",
-        "frontImage": "project-wicked.png",
-        "backImage": "project-wicked_b.png",
-        "link": "wicked"
-    },
+    // {
+    //     "id": "wicked",
+    //     "name": "Wicked Film Webpage",
+    //     "frontImage": "project-wicked.png",
+    //     "backImage": "project-wicked_b.png",
+    //     "link": "wicked"
+    // },
 ];
 
 const imageMap = {
