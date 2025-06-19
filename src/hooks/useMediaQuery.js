@@ -1,4 +1,3 @@
-// hooks/useMediaQuery.js
 import { useEffect, useState } from "react";
 
 function useMediaQuery(query) {

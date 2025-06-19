@@ -103,9 +103,9 @@ function Home() {
                             <Link to={"/yogurt"} className="col-6-md col-4-sm home-featured_item">
                                 <img src={Yogurt} alt="" />
                             </Link>
-                            <Link to={"/catoro"} className="col-6-md col-4-sm home-featured_item">
+                            {/* <Link to={"/catoro"} className="col-6-md col-4-sm home-featured_item">
                                 <img src={Catoro} alt="" />
-                            </Link>
+                            </Link> */}
 
                         {/* </div> */}
                         <div className="project-cta col-12-md col-4-sm mt-5 mb-8">

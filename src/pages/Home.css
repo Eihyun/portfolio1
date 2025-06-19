@@ -78,7 +78,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
-    transform: translateY(3%) scale(70%);
+    transform: scale(80%);
 }
 
 @media screen and (min-width: 834px) {
@@ -98,7 +98,7 @@
 }
 
 .home-banner_cta {
-    /* visibility: hidden; */
+    visibility: hidden;
     width: 15rem;
     position: absolute;
     display: flex;
@@ -108,6 +108,7 @@
 
 @media screen and (min-width: 834px) {
     .home-banner_cta {
+        visibility: visible;
         position: absolute;
         top: 4rem;
         left: 16rem;

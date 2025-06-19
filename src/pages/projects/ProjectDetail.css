@@ -134,6 +134,11 @@
     line-height: 1.5;
 }
 
+.challenges ul {
+    list-style-type: square;
+    margin: 6%;
+}
+
 .project-detail p {
     font-size: 1rem;
 }
