@@ -4,12 +4,12 @@ import "./Projects.css";
 
 import CardFlip from '../assets/components/CardFlip'
 
-import WickedFront from '../assets/images/project-wicked.png';
-import WickedBack from '../assets/images/project-wicked_b.png';
 import YogurtFront from '../assets/images/project-yogurt.png';
 import YogurtBack from '../assets/images/project-yogurt_b.png';
 import CatoroFront from '../assets/images/project-catoro.png';
 import CatoroBack from '../assets/images/project-catoro_b.png';
+import STOFront from '../assets/images/project-savetheocean.png';
+import STOBack from '../assets/images/project-savetheocean_b.png';
 
 
 const project = [
@@ -27,22 +27,22 @@ const project = [
         "backImage": "project-catoro_b.png",
         "link": "catoro"
     },
-    // {
-    //     "id": "wicked",
-    //     "name": "Wicked Film Webpage",
-    //     "frontImage": "project-wicked.png",
-    //     "backImage": "project-wicked_b.png",
-    //     "link": "wicked"
-    // },
+    {
+        "id": "savetheocean",
+        "name": "Save the Ocean",
+        "frontImage": "project-savetheocean.png",
+        "backImage": "project-savetheocean_b.png",
+        "link": "savetheocean"
+    }
 ];
 
 const imageMap = {
-    'project-wicked.png': WickedFront,
-    'project-wicked_b.png': WickedBack,
     'project-yogurt.png': YogurtFront,
     'project-yogurt_b.png': YogurtBack,
     'project-catoro.png': CatoroFront,
-    'project-catoro_b.png': CatoroBack
+    'project-catoro_b.png': CatoroBack,
+    'project-savetheocean.png': STOFront,
+    'project-savetheocean_b.png': STOBack,
 };
 
 function Projects() {
@@ -59,7 +59,6 @@ function Projects() {
                                 <CardFlip project={project} imageMap={imageMap} />
                             </Link>
                         ))}
-
 
                     </div>
                 </div>
