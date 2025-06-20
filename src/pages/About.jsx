@@ -22,7 +22,7 @@ function About() {
                         </div>
                     </div>
                     <div className="col-1-lg col-4-md col-1-sm">
-                            <img src={logoMic} className="about-intro_img-logo"></img>
+                        <img src={logoMic} className="about-intro_img-logo" />
                     </div>
 
                     <div className="col-6-lg col-12-md col-4-sm pretendard fw-4 about-intro_text">
