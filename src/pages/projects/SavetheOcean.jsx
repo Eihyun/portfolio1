@@ -1,8 +1,6 @@
 import "./ProjectDetail.css";
 
-import CatoroPreview from '../../assets/images/Catoro_Preview.jpeg';
-import CatoroDesignOverview from '../../assets/images/Catoro_DesignOverview.jpeg';
-import CatoroCompetitiveAnalysis from '../../assets/images/Catoro_CompetitiveAnalysis.jpeg';
+import STOPreview from '../../assets/images/STO_Preview.png';
 import TagHole from '../../assets/images/tag-hole.svg';
 
 function SavetheOcean() {
@@ -12,7 +10,7 @@ function SavetheOcean() {
             <div className="container">
                 <div className="grid vertical-center project-preview_container">
                     <div className="col-12-md col-4-sm mt-4 project-preview">
-                        <img src={CatoroPreview} alt="" />
+                        <img src={STOPreview} alt="" />
                     </div>
                     <a href="https://github.com/Eihyun/SavetheOcean" target='_blank' className="col-3-md col-2-sm col-1-sm repository">
                         <img src={TagHole} className="tag-hole"  alt="" />
@@ -33,7 +31,6 @@ function SavetheOcean() {
                     <div className="col-12-md col-4-sm project-detail">
                         <div className="overview pretendard">
                             <p>Save the Ocean is a browser-based game designed to raise awareness about marine pollution and proper recycling habits. The player takes on the role of an octopus tasked with sorting waste into the correct recycling bins. The core mechanic involves using arrow key inputs to sort items correctly under a time constraint, blending education with interactive gameplay. </p>
-                            <img src={CatoroDesignOverview} alt="" />
                             <p>This project was a collaboration between me as a developer and a designer(Sally). Sally created all custom illustrations, while I focused on functionality, game logic, and interface behavior. We aligned game features with visual priorities through regular check-ins and shared Figma file. All game visuals, except the waste item icons, were hand-drawn by Sally in a colorful style to suit the target age group and maintain clarity. The recyclable items were sourced from Adobe Stock to save time and ensure instant recognizability.</p>
                             
                         </div>
