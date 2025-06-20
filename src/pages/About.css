@@ -18,14 +18,14 @@
     position: relative;
     top: 0; left: -5rem;
     animation: mic 7s infinite ease;
-    transform: translate(0) scale(1) rotate(0);
-    transform-origin: center left;
+    transform: translateX(0) scale(1) rotate(0);
+    transform-origin: 	center center;
 }
 
 @keyframes mic {
-    0% { transform: translateX(-10%) scale(160%) rotate(0) }
-    50% { transform: translate(90%) scale(160%) rotate(20deg) }
-    100% { transform: translate(-10%) scale(160%) rotate(0) }
+    0% { transform: scale(160%) rotate(0); left: -5rem }
+    50% { transform: scale(160%) rotate(20deg); left: 0 }
+    100% { transform: scale(160%) rotate(0); left: -5rem; }
 }
 
 
@@ -37,8 +37,8 @@
 
     @keyframes mic {
         0% { transform: translateX(-90%) scale(100%) rotate(0) }
-        50% { transform: translate(-10%) scale(100%) rotate(20deg) }
-        100% { transform: translate(-90%) scale(100%) rotate(0) }
+        50% { transform: translateX(-10%) scale(100%) rotate(20deg) }
+        100% { transform: translateX(-90%) scale(100%) rotate(0) }
     }
 }
 
@@ -48,9 +48,9 @@
     }
 
     @keyframes mic {
-        0% { transform: translate(-200%) scale(200%) rotate(0) }
-        50% { transform: translate(-50%) scale(200%) rotate(20deg) }
-        100% { transform: translate(-200%) scale(200%) rotate(0) }
+        0% { transform: translateX(-200%) scale(200%) rotate(0) }
+        50% { transform: translateX(-50%) scale(200%) rotate(20deg) }
+        100% { transform: translateX(-200%) scale(200%) rotate(0) }
     }
 }
 
