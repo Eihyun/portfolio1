@@ -6,9 +6,12 @@ function AboutBtn() {
     return (
         <>
         <button className="about-btn">
-            <Link to={"/about"} onClick={() => {
-                                window.scroll(0,0)
-                            }} >
+            <Link 
+            to={"/about"} 
+            onClick={() => {
+                window.scroll(0,0)
+            }} 
+            >
                 <div className="barcode-box">
                     <span className="barcode-stripe stripe-1"></span>
                     <span className="barcode-stripe stripe-2"></span>

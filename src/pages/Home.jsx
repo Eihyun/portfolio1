@@ -13,7 +13,6 @@ import Footer from "../global/Footer";
 import RainbowBar from "../assets/components/RainbowBar";
 import Icons from "../assets/components/Icons";
 import AboutBtn from '../assets/components/AboutBtn';
-import FuzzyText from '../assets/components/FuzzyText';
 import Magnet from '../assets/components/Magnet';
 
 // images
@@ -22,6 +21,7 @@ import HomeTv from "../assets/images/home-tv.png";
 import Wicked from '../assets/images/project-wicked.png';
 import Catoro from '../assets/images/project-catoro.png';
 import Yogurt from '../assets/images/project-yogurt.png';
+import SavetheOcean from '../assets/images/project-savetheocean.png';
 
 function Home() {
     const [hoveredCta, setHoveredCta] = useState(false);
@@ -97,15 +97,22 @@ function Home() {
                         </div>
                         
                         {/* <div className="col-12-md col-4-sm home-featured_item"> */}
-                            <Link to={"/wicked"} className="col-6-md col-4-sm home-featured_item">
-                                <img src={Wicked} alt="" />
-                            </Link>
-                            <Link to={"/yogurt"} className="col-6-md col-4-sm home-featured_item">
+                            <Link 
+                            to={"/yogurt"} 
+                            onClick={() => {
+                                window.scroll(0,0)
+                            }}
+                            className="col-6-md col-4-sm home-featured_item">
                                 <img src={Yogurt} alt="" />
                             </Link>
-                            {/* <Link to={"/catoro"} className="col-6-md col-4-sm home-featured_item">
-                                <img src={Catoro} alt="" />
-                            </Link> */}
+                            <Link 
+                            to={"/savetheocean"} 
+                            onClick={() => {
+                                window.scroll(0,0)
+                            }}
+                            className="col-6-md col-4-sm home-featured_item">
+                                <img src={SavetheOcean} alt="A vibrant red octopus sitting on a VHS tape, linked to the 'Save the Ocean' project. Click for project details!" />
+                            </Link>
 
                         {/* </div> */}
                         <div className="project-cta col-12-md col-4-sm mt-5 mb-8">

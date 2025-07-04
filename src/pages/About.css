@@ -58,13 +58,13 @@
     background-color: white;
     border: 2px solid black;
     border-radius: 1.875rem;
-    padding: 3rem;
+    padding: 3rem 2rem;
 }
 
 .about-intro_text > p {
     color: black;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .about-intro_text > p:not(:last-child) {

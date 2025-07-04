@@ -7,6 +7,7 @@ function SavetheOcean() {
 
     return(
         <>
+            <title>Check Out: Save the Ocean</title>
             <div className="container">
                 <div className="grid vertical-center project-preview_container">
                     <div className="col-12-md col-4-sm mt-4 project-preview">

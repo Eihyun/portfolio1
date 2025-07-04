@@ -7,6 +7,7 @@ function Wicked() {
 
     return(
         <>
+            <title>Check out: Wicked Website</title>
             <div className="container">
                 {/* Project Overview */}
                 <div className="grid vertical-center project-preview_container">
