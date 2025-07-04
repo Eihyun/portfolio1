@@ -12,15 +12,6 @@ function PageWrap() {
             <meta name="author" content="Eihyun Kim" />
             <meta name="description" content="Eihyun Kim is a front end web developer based in Vancouver, specialized in user centered websites, focusing on smooth user experience." />
             <meta name="keywords" content="Eihyun Kim, Front-End Developer, Web Designer, UX/UI Design, Web Development, React, BCIT, Portfolio" />
-            <meta property="og:title" content="Eihyun Kim - Front-End Developer" />
-            <meta property="og:description" content="Front-end developer based in Vancouver focused on user-centered design." />
-            <meta property="og:image" content="https://eihyunkim.com/images/og-image.png" />
-            <meta property="og:url" content="https://eihyunkim.com" />
-            <meta property="og:type" content="website" />
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Eihyun Kim - Front-End Developer" />
-            <meta name="twitter:description" content="Front-end developer based in Vancouver focused on user-centered design." />
-            <meta name="twitter:image" content="https://eihyunkim.com/images/og-image.png" />
             <script type="application/ld+json" >
                 {JSON.stringify(
                     {
