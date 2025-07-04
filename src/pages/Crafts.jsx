@@ -12,6 +12,7 @@ function Crafts() {
 
     return(
         <>
+            <title>Creative Projects Beyond Code</title>
             <div className="container logo-page_container">
                 <div className="grid logo-page mb-8">
 
