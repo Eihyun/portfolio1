@@ -67,6 +67,7 @@
     background-position: center;
     background-size: contain;
 
+
 }
 
 .nav-mobile-menu a:hover {
@@ -74,8 +75,8 @@
 }
 
 .nav-home, .nav-about, .nav-projects, .nav-crafts {
-    width: 3.25rem;
-    height: 25.285rem;
+    width: 3.75rem;
+    height: 29.175rem;
     background-size: 100%;
 }
 
@@ -86,19 +87,19 @@
 
 .nav-projects, .nav-crafts {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .nav-home {
-    font-size: 2.75rem;
+    font-size: 3rem;
     background-image: url('../images/nav-home.svg');
 }
 
 .nav-about {
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.5rem;
     background-image: url('../images/nav-about.svg');
-    padding-left: 1.4%;
+    padding-left: 1.3%;
 }
 
 .nav-projects {

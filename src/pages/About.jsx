@@ -14,15 +14,17 @@ function About() {
 
     return(
         <>
+            <title>Learn More About Eihyun</title>
+            <meta name="description" content="Learn about Eihyun Kim, a frontend developer focused on human-centered design." />
             <div className="container">
                 <div className="grid vertical-center mt-4 about-intro">
                     <div className="col-5-lg col-8-md col-3-sm mb-4">
                         <div className="about-intro_img-container">
-                            <img src={myImg3} className="about-intro_img" alt="" />
+                            <img src={myImg3} className="about-intro_img" alt="Profile image of Eihyun Kim" />
                         </div>
                     </div>
                     <div className="col-1-lg col-4-md col-1-sm">
-                        <img src={logoMic} className="about-intro_img-logo" />
+                        <img src={logoMic} className="about-intro_img-logo" alt="Eihyun Kim's Logo with a mic" />
                     </div>
 
                     <div className="col-6-lg col-12-md col-4-sm pretendard fw-4 about-intro_text">

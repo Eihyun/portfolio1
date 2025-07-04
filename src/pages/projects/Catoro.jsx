@@ -9,6 +9,7 @@ function Catoro() {
 
     return(
         <>
+            <title>Check out: Catoro Case Study</title>
             <div className="container">
                 <div className="grid vertical-center project-preview_container">
                     <div className="col-12-md col-4-sm mt-4 project-preview">
