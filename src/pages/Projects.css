@@ -1,6 +1,6 @@
 .project-page_title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--Dark, #041334);
 }
 
@@ -14,10 +14,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem 0 10rem;
-    gap: 5rem;
+    margin: 3rem 0 10rem;
+    gap: 4rem;
 }
 
-.project-list_item > h4{
+.card-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }

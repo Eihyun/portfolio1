@@ -13,10 +13,11 @@ import './NavDesktop.css';
 function NavDesktop() {
     const location = useLocation();
     const [hovered, setHovered] = useState(null);
-    
+
     const isActive = (path) => location.pathname === path;
 
     return (
+        <>
         <div className="nav-container">
 
                 <ul className="navbar noka fw-7">
@@ -87,6 +88,7 @@ function NavDesktop() {
                 </ul>
 
         </div> 
+        </>
     )
 }
 

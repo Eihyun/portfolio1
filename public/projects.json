@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Save the Ocean",
+        "description": "Browser based interactive mini-game.",
+        "link": "savetheocean"
+    },
+    {
+        "id": 2,
+        "name": "Yogurt Yoghurt Yogurté",
+        "description": "Website for a fictional froyo shop featured on the TV show The Good Place.",
+        "link": "yogurt"
+    },
+    {
+        "id": 3,
+        "name": "Catoro Case Study",
+        "description": "Case Study for Catoro Cat Cafe's adoption process.",
+        "link": "catoro"
+    }
+]

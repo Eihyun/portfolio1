@@ -9,7 +9,7 @@ function AboutBtn() {
             <Link 
             to={"/about"} 
             onClick={() => {
-                window.scroll(0,0)
+                window.scroll(0,500)
             }} 
             >
                 <div className="barcode-box">
