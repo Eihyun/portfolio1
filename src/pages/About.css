@@ -84,7 +84,7 @@
         font-size: 1.25rem;
         line-height: 2rem;
     }
-
+    
     .about-intro_text > p:not(:last-child) {
         margin-bottom: 1.5rem;
     }
@@ -96,6 +96,22 @@
     }
 }
 
+/* Skills */
+.about-skills {
+    display: none;
+}
+
+@media screen and (min-width: 834px) {
+    .about-skills {
+        display: block;
+    }
+    
+    .about-skills_stickers {
+        height: 30rem;
+    }
+}
+
+/* Pronunciation */
 .about-pronun {
     display: flex;
     flex-direction: column;

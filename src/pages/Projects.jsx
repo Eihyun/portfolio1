@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import "./Projects.css";
 
-import VhsTape from '../assets/components/VhsTape';
+import VhsCover from '../assets/components/VhsCover';
 
 function Projects() {
     const [projects, setProjects] = useState([]);
@@ -26,21 +26,17 @@ function Projects() {
                     <ul className="col-12-md col-4-sm project-list">
 
                         {projects.map(project => (
-                            <li key={project.id} className="project-list-item">
-                                
-                                <Link 
-                                to={`/projects/${project.link}`} 
-                                key={project.id} 
-                                className="card-link"
-                                onClick={() => {
-                                    window.scroll(0,0)
-                                }}
-                                >
-                                    <h2 className="pretendard fw-6 mb-4">{project.name}</h2>
-                                    <VhsTape id={project.link} />
-                                    <p className="pretendard fw-4 mt-4 mb-4">{project.description}</p>
-                                </Link>
-                            </li>
+                        <li key={project.id} className="project-list-item">
+                            <Link
+                            to={`/projects/${project.link}`}
+                            className="card-link"
+                            onClick={() => window.scroll(0, 0)}
+                            >
+                                <h2 className="pretendard fw-6 mb-4">{project.name}</h2>
+                                <VhsCover image={project.image} alt={`${project.name} VHS Cover`} />
+                                <p className="pretendard fw-4 mt-4 mb-4">{project.description}</p>
+                            </Link>
+                        </li>
                         ))}
 
                     </ul>

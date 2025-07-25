@@ -3,18 +3,21 @@
         "id": 1,
         "name": "Save the Ocean",
         "description": "Browser based interactive mini-game.",
-        "link": "savetheocean"
+        "link": "savetheocean",
+        "image": "/images/STO_Cover.svg"
     },
     {
         "id": 2,
         "name": "Yogurt Yoghurt Yogurté",
         "description": "Website for a fictional froyo shop featured on the TV show The Good Place.",
-        "link": "yogurt"
+        "link": "yogurt",
+        "image": "/images/Yogurt_Cover.svg"
     },
     {
         "id": 3,
         "name": "Catoro Case Study",
         "description": "Case Study for Catoro Cat Cafe's adoption process.",
-        "link": "catoro"
+        "link": "catoro",
+        "image": "/images/Catoro_Cover.svg"
     }
 ]
