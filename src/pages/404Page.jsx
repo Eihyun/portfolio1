@@ -1,14 +1,11 @@
 import React from "react";
-import './404Page.css';
+import { Link } from 'react-router-dom';
 
 const PageNotFound = () => {
     return (
         <div className='container'>
-            <h2 className='pretendard fw-9 mb-6'>404 Error</h2>
-            {/* <p>Oops! The page you're looking for does not exist.</p> */}
-            <div className="vhs-tape pretendard" id="vhs">
-                <div></div>
-            </div>
+            <h1 className='pretendard fw-9 mb-6'>404 Error</h1>
+            <p className='pretendard mb-4'>Oops! The page you're looking for does not exist.</p>
         </div>
     );
 };

@@ -18,12 +18,13 @@ import Magnet from '../assets/components/Magnet';
 // images
 import HomeBannerVhs from "../assets/images/home-banner_vhs.svg";
 import HomeTv from "../assets/images/home-tv.png";
-import Wicked from '../assets/images/project-wicked.png';
-import Catoro from '../assets/images/project-catoro.png';
-import Yogurt from '../assets/images/project-yogurt.png';
-import SavetheOcean from '../assets/images/project-savetheocean.png';
+import Yogurt from "../assets/images/Yogurt_Preview.png";
+import Catoro from "../assets/images/Catoro_Preview.png";
+import STO from "../assets/images/STO_Preview.png";
+import VhsTape from '../assets/components/VhsTape';
 
 function Home() {
+    // Hover effect on banner Vhs to About page CTA
     const [hoveredCta, setHoveredCta] = useState(false);
 
     const handleMouseEnter = () => {
@@ -33,6 +34,22 @@ function Home() {
     const handleMouseLeave = () => {
         setHoveredCta(false);
     }
+
+    // Preview Image on the TV
+    const [hoveredId, setHoveredId] = useState(null);
+
+    const getPreviewImage  = (id) => {
+        switch (id) {
+            case 'yogurt':
+                return Yogurt;
+            case 'catoro':
+                return Catoro;    
+            case 'savetheocean':
+                return STO;
+            default:
+                return PlaceHolder;
+        }
+    };
 
     return(
         <>
@@ -84,38 +101,70 @@ function Home() {
                 </div>
 
                 {/* Featured Projects */}
-                <div className="container mt-8">
+                <div className="container">
                     <div className="grid vertical-center home-featured">
                         <div className="col-12-md col-4-sm fw-8 home-featured_text">
                             <h2 className="h2 loos-extended home-featured_text-featured">Featured
                                 <span className="loos-wide home-featured_text-projects">Projects</span>
                             </h2>
                         </div>
-                        <div className="col-12-md col-4-sm home-featured_tv">
-                            {/* <img src={HomeTv} alt="" /> */}
 
+
+                    </div>
+                    <div className="home-projects mt-8">
+
+                    <div className="home-featured_tv">
+                        <div className="tv-screen">
+                            <div className="tv-content">
+                                {hoveredId ? (
+                                    <img src={getPreviewImage(hoveredId)} alt="Project Preview" />
+                                ) : (
+                                    <div className="tv-text pretendard">
+                                        Choose a VHS to preview →
+                                    </div>
+                                )}
+                                <div className="tv-overlay"></div>
+                                <div className="tv-noise"></div>
+                            </div>
                         </div>
-                        
-                        {/* <div className="col-12-md col-4-sm home-featured_item"> */}
-                            <Link 
-                            to={"/yogurt"} 
-                            onClick={() => {
-                                window.scroll(0,0)
-                            }}
-                            className="col-6-md col-4-sm home-featured_item">
-                                <img src={Yogurt} alt="" />
-                            </Link>
-                            <Link 
-                            to={"/savetheocean"} 
-                            onClick={() => {
-                                window.scroll(0,0)
-                            }}
-                            className="col-6-md col-4-sm home-featured_item">
-                                <img src={SavetheOcean} alt="A vibrant red octopus sitting on a VHS tape, linked to the 'Save the Ocean' project. Click for project details!" />
-                            </Link>
+                    </div>
+                    
+                    {/* <div className="col-12-md col-4-sm home-featured_item"> */}
+                    <Link 
+                    to={"/projects/yogurt"} 
+                    onClick={() => {
+                        window.scroll(0,0)
+                    }}
+                    onMouseEnter={() => setHoveredId('yogurt')}
+                    onMouseLeave={() => setHoveredId(null)}
+                    className="home-featured_item">
+                        <VhsTape id="yogurt"/>
+                    </Link>
+                    <Link 
+                    to={"/projects/savetheocean"} 
+                    onClick={() => {
+                        window.scroll(0,0)
+                    }}
+                    onMouseEnter={() => setHoveredId('savetheocean')}
+                    onMouseLeave={() => setHoveredId(null)}
+                    className="home-featured_item">
+                        <VhsTape id="savetheocean" />
+                    </Link>
+                    <Link 
+                    to={"/projects/catoro"} 
+                    onClick={() => {
+                        window.scroll(0,0)
+                    }}
+                    onMouseEnter={() => setHoveredId('catoro')}
+                    onMouseLeave={() => setHoveredId(null)}
+                    className="home-featured_item">
+                        <VhsTape id="catoro" />
+                    </Link>
 
                         {/* </div> */}
-                        <div className="project-cta col-12-md col-4-sm mt-5 mb-8">
+
+                        {/* View more button */}
+                        <div className="project-cta col-12-md col-4-sm mb-8">
                             <Link to={"/projects"} onClick={() => {
                                 window.scroll(0,0)
                             }} >
@@ -124,6 +173,7 @@ function Home() {
                                 </div>
                             </Link>
                         </div>
+
                     </div>
                 </div>
             </div>

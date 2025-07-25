@@ -13,6 +13,10 @@ html, body, #root {
     overflow: hidden;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 p {
     text-wrap: pretty;
 }

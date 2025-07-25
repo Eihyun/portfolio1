@@ -20,12 +20,12 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/wicked" element={<Wicked />} />
+          <Route path="/projects/yogurt" element={<Yogurt />} />
+          <Route path="/projects/catoro" element={<Catoro />} />
+          <Route path="/projects/savetheocean" element={<SavetheOcean />} />
           <Route path="/crafts" element={<Crafts />} />
-          <Route path="/wicked" element={<Wicked />} />
-          <Route path="/yogurt" element={<Yogurt />} />
-          <Route path="/catoro" element={<Catoro />} />
-          <Route path="/savetheocean" element={<SavetheOcean />} />
-          <Route path="*"  element={<PageNotFound />} />
+          <Route path="*" element={<PageNotFound />} status={404} />
         </Route>
       </Routes>
     </>
