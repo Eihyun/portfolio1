@@ -18,7 +18,7 @@ function Projects() {
 
     return(
         <>
-            <title>Eihyun's Cooool Projects</title>
+            <title>Eihyun's Awesome Projects</title>
             <meta name="description" content="Explore featured web development projects by Eihyun Kim."/>
             <div className="container">
                 <div className="grid">
