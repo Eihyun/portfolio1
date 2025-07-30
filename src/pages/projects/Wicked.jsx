@@ -3,12 +3,16 @@ import "./ProjectDetail.css";
 import WickedPreview from '../../assets/images/Wicked_Preview.jpeg';
 import TagHole from '../../assets/images/tag-hole.svg';
 
+import MagicBento from '../../assets/components/MagicBento';
+
 function Wicked() {
 
     return(
         <>
+            
             <title>Check out: Wicked Website</title>
             <div className="container">
+                
                 {/* Project Overview */}
                 <div className="grid vertical-center project-preview_container">
                     <div className="col-12-md col-4-sm mt-4 project-preview">
