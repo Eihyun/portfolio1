@@ -3,8 +3,6 @@ import "./ProjectDetail.css";
 import WickedPreview from '../../assets/images/Wicked_Preview.jpeg';
 import TagHole from '../../assets/images/tag-hole.svg';
 
-import MagicBento from '../../assets/components/MagicBento';
-
 function Wicked() {
 
     return(
