@@ -17,8 +17,34 @@
     display: inline;
 }
 
+.pronounce-audio  {
+    position: relative;
+}
+
 .pronounce-icon {
     cursor: pointer;
+}
+
+.pronounce-tip {
+    position: absolute;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    top: -6%; left: -5%;
+}
+
+.pronounce-tip:before {
+    border: 0.5rem solid transparent;
+    border-top-color: var(--dark);
+    content: '';
+    margin-left: -0.5em;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
 }
 
 .phonetics {

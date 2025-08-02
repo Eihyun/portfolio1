@@ -122,12 +122,18 @@
 }
 
 .home-banner_vhs {
-    transform: translateY(-50%);
+    transform: translateX(0%) translateY(-50%);
 }
 
 @media screen and (min-width: 834px) {
     .home-banner_vhs {
-        transform: translateY(35%);
+        transform: translateY(20%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .home-banner_vhs {
+        transform: translateX(-10%) translateY(20%);
     }
 }
 
@@ -147,6 +153,7 @@
 
 .home-featured_text-projects {
     display: inline-block;
+    margin-top: 0.4rem;
     margin-right: 0.8rem;
     font-size: 2.5rem;
     color: var(--Dark, #041334);
@@ -330,7 +337,7 @@
         position: absolute;
         inset: -100%;
         background-image: url(../assets/images/noise4.png);
-        opacity: 15%;
+        opacity: 10%;
         animation: shift 0.2s linear infinite both;
         pointer-events: none;
     }

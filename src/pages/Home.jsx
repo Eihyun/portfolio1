@@ -60,9 +60,7 @@ function Home() {
                         <div className="home-banner_text">
 
                             <h2 className="h2 kyrial fw-8 home-banner_beKind">
-                            {/* <FuzzyText baseIntensity={0.18} > */}
                                 Be Kind, 
-                            {/* </FuzzyText> */}
                                 <span className="kyrial-cond fw-9 home-banner_span">build minds</span>
                             </h2>
 
@@ -74,7 +72,7 @@ function Home() {
                     <div className="col-3-md col-3-sm">
                     </div>
                     <div className="col-1-md col-1-sm home-banner_icons">
-                        <Icons />
+                        <Icons className="home-banner_icons" />
                     </div>
                     <div className="col-4-lg col-2-md col-4-sm home-banner_cta-container">
                         {hoveredCta && (

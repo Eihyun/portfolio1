@@ -8,6 +8,7 @@ import StickerPeel from '../assets/components/StickerPeel';
 // images
 // import myImg from "../assets/images/about-image.jpg";
 // import myImg2 from "../assets/images/about-image2.jpeg";
+import mission from "../assets/images/mission.svg";
 import myImg3 from "../assets/images/about-image3.jpeg";
 import logoMic from "../assets/images/Eihyun_mic.png";
 import logoReact from "../assets/logo/react.svg";
@@ -27,6 +28,12 @@ function About() {
             <meta name="description" content="Learn about Eihyun Kim, a frontend developer focused on human-centered design." />
             <div className="container">
                 <div className="grid vertical-center mt-4 about-intro">
+                    <div className="col-12-md col-4-sm mb-4">
+                        <div className="about-title">
+                            <h1 className="loos-wide fw-7">About Me</h1>
+                            <img src={mission} alt="I believe in user-centered digital experience that foster a sense of belonging for everyone." />
+                        </div>
+                    </div>
                     <div className="col-5-lg col-8-md col-3-sm mb-4">
                         <div className="about-intro_img-container">
                             <img src={myImg3} className="about-intro_img" alt="Profile image of Eihyun Kim" />
@@ -37,17 +44,17 @@ function About() {
                     </div>
 
                     <div className="col-6-lg col-12-md col-4-sm pretendard fw-4 about-intro_text">
-                        <p>Hello! I'm Eihyun.</p>
-                        <p>I’m a creative and detail-oriented <span>front-end web developer</span> with a strong foundation in Media Communications. </p>
-                        <p>I have experience in video production, social media, and content strategy, which has helped me create engaging digital content that connects with people.</p>
-                        <p>I deepened my technical expertise as a student in the <span>New Media Design and Web Development</span> program at BCIT. I’m passionate about continuously learning and refining my skills to build intuitive websites and applications that deliver seamless user experiences.</p>
+                        <p><span>Hello! I'm Eihyun.</span><br />(Not sure how to pronounce it? Scroll down to hear it)</p>
+                        <p>I’m a <span>front-end web developer</span> with a background in Media Communications and a sharp eye for detail. </p>
+                        <p>Before transitioning into web development, I worked in video production, social media, and content strategy. These taught me how to create <span>digital content that resonates with people.</span></p>
+                        <p>I deepened my technical skills through the <span>New Media Design and Web Development</span> program at BCIT. I’m always learning and focused on building intuitive, accessible websites and applications that provide seamless user experiences.</p>
                     </div>
                 </div>
 
                 <div className="grid vertical-center mt-8 about-skills">
                     <div className="col-12-md col-4-sm mt-8 about-skills_stickers">
 
-                        <h2 className="loos-wide fw-7">Skills</h2>
+                        <h2 className="about-skills-title loos-wide fw-7">Technical Skills</h2>
                         <StickerPeel
                             imageSrc={logoReact}
                             width={200}
@@ -56,7 +63,7 @@ function About() {
                             peelBackActivePct={40}
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
-                            initialPosition={{ x: 0, y: 70 }}
+                            initialPosition={{ x: 0, y: 20 }}
                             className="stickers"
                         />
                         <StickerPeel
@@ -78,7 +85,7 @@ function About() {
                             peelBackActivePct={40}
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
-                            initialPosition={{ x: 340, y: 90 }}
+                            initialPosition={{ x: 330, y: 50 }}
                             className="stickers"
                         />
                         <StickerPeel
@@ -100,7 +107,7 @@ function About() {
                             peelBackActivePct={40}
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
-                            initialPosition={{ x: 650, y: 130 }}
+                            initialPosition={{ x: 650, y: 30 }}
                             className="stickers"
                         />
                         <StickerPeel
@@ -133,7 +140,7 @@ function About() {
                             peelBackActivePct={40}
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
-                            initialPosition={{ x: 1100, y: 100 }}
+                            initialPosition={{ x: 1100, y: 10 }}
                             className="stickers"
                         />
 
@@ -148,6 +155,10 @@ function About() {
                     <div className="col-12-md col-4-sm about-pronun_break">
                         <Pronounce />
                     </div>
+                </div>
+
+                <div className="grid vertical-center mt-8 about-more">
+
                 </div>
             </div>
         </>
