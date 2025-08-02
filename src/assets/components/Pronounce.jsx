@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import useSound from 'use-sound';
 
 import './Pronounce.css';
@@ -9,6 +9,13 @@ import EihyunSfx from '../audio/Eihyun.mp3';
 
 const Pronounce = () => {
     const [play] = useSound(EihyunSfx);
+    const [tipVisible, setTipVisible] = useState(true);
+
+    const handlePlay = () => {
+        play();
+        setTipVisible(false);
+        setTimeout(() => setTipVisible(true), 1000);
+    }
 
     return (
         <>
@@ -18,9 +25,11 @@ const Pronounce = () => {
                     size={80} 
                     color="var(--primary)" 
                     className="pronounce-icon" 
-                    onClick={play}
-                    >
-                </RiVolumeUpFill>
+                    onClick={handlePlay}
+                />
+                {tipVisible && (
+                    <span className="pronounce-tip pretendard">Click to hear it!</span>
+                )}
                 <audio src="../audio/fart.mp3" />
                     <h3 className="loos-wide fw-7 pl-5 pronounce-name">Eihyun</h3>
             </div>

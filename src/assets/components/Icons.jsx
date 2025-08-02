@@ -9,12 +9,12 @@ import {
     RiGithubFill 
 } from '@remixicon/react'
 
-function Icons() {
+function Icons({ className = "" }) {
     const [hoveredIcon, setHoveredIcon] = useState(null);
 
     return(
         <>
-            <div className="home-banner_icons">
+            <div className={`${className}`}>
                 <a href="https://www.linkedin.com/in/eihyun-kim-1530731a6/" 
                     target='_blank' 
                     rel="noopener noreferrer"

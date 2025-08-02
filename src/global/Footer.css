@@ -1,7 +1,70 @@
 .site-footer {
-    padding: 2rem 0;
+    padding: 6rem 0 2rem;
 }
 
 .site-footer_rainbow {
     height: 6rem;
+}
+
+.site-footer-left {
+    text-align: center;
+}
+
+.email-copy-container {
+    position: relative;
+    display: inline-block;
+}
+
+.email-copy-icon {
+    position: relative;
+    top: 0.3rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.email-tooltip {
+    position: absolute;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+    top: -110%; left: -25%;
+}
+
+.site-footer-middle {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-icons .banner-icon {
+    width: 40px;
+}
+
+.banner-icon {
+    transition: transform 0.2s ease;
+}
+
+.banner-icon:hover {
+    transform: scale(1.15);
+}
+
+@media screen and (min-width: 834px) {
+    .site-footer-left {
+        text-align: left;
+    }
+
+    .site-footer-right {
+        text-align: right;
+    }
+
+    .footer-icons {
+        justify-content: flex-end;
+    }
 }

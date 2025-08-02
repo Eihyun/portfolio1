@@ -1,3 +1,33 @@
+.about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title > h1 {
+    text-align: center;
+}
+
+.about-title > img{
+    width: 100%;
+    padding: 2rem 0;
+}
+
+@media screen and (min-width: 834px) {
+    .about-title > img{
+        width: 80%;
+        padding: 2rem 0;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .about-title > img{
+        width: 50%;
+        padding: 2rem 0;
+    }
+}
+
 .about-intro_img-container {
     position: relative;
     z-index: 1;
@@ -101,6 +131,12 @@
     display: none;
 }
 
+.about-skills-title {
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
 @media screen and (min-width: 834px) {
     .about-skills {
         display: block;
@@ -117,33 +153,33 @@
     flex-direction: column;
 }
 
-.about-pronun_text {
+.about-pronun_text > h2 {
     text-align: center;
     font-size: 2.5rem;
 }
 
-.h3 {
+.about-pronun_text > h3 {
     color: var(--gray);
     font-size: 1.25rem;
     margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 834px) {
-    .about-pronun_text {
+    .about-pronun_text > h2 {
         font-size: 3rem;
     }
     
-    .h3 {
+    .about-pronun_text > h3 {
         font-size: 1.5rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .about-pronun_text {
-        font-size: 3.5rem;
+    .about-pronun_text > h2 {
+        font-size: 4rem;
     }
     
-    .h3 {
+    .about-pronun_text > h3 {
         font-size: 2rem;
     }
 }
