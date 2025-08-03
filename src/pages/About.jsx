@@ -32,6 +32,7 @@ function About() {
                         <div className="about-title">
                             <h1 className="loos-wide fw-7">About Me</h1>
                             <img src={mission} alt="I believe in user-centered digital experience that foster a sense of belonging for everyone." />
+                            <span className="pretendard">- Eihyun</span>
                         </div>
                     </div>
                     <div className="col-5-lg col-8-md col-3-sm mb-4">

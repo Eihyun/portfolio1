@@ -6,19 +6,35 @@
 
 .about-title > h1 {
     text-align: center;
+    padding-bottom: 4rem;
 }
 
 .about-title > img{
-    width: 100%;
-    padding: 2rem 0;
+    position: absolute;
+    width: 90%;
+    padding: 4.5rem 0;
+}
+
+.about-title > span {
+    padding: 4rem 0 2rem;
+    font-size: 1.25rem;
 }
 
 @media screen and (min-width: 834px) {
+    .about-title > h1 {
+        padding-bottom: 2rem;
+    }
+
     .about-title > img{
+        position: relative;
         width: 80%;
         padding: 2rem 0;
     }
-    
+
+    .about-title > span {
+        padding-top: 2rem;
+        font-size: 1.25rem;
+    }
 }
 
 @media screen and (min-width: 1440px) {

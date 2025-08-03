@@ -48,7 +48,7 @@
 }
 
 .banner-icon {
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease-in-out;
 }
 
 .banner-icon:hover {

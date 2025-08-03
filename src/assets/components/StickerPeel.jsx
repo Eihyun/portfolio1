@@ -140,12 +140,12 @@ const StickerPeel = ({
         container.classList.remove('touch-active');
         };
 
-        container.addEventListener('touchstart', handleTouchStart);
+        container.addEventListener('touchstart', handleTouchStart, { passive: true });
         container.addEventListener('touchend', handleTouchEnd);
         container.addEventListener('touchcancel', handleTouchEnd);
 
         return () => {
-        container.removeEventListener('touchstart', handleTouchStart);
+        container.removeEventListener('touchstart', handleTouchStart, { passive: true });
         container.removeEventListener('touchend', handleTouchEnd);
         container.removeEventListener('touchcancel', handleTouchEnd);
         };

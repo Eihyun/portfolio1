@@ -1,0 +1,127 @@
+import React, { useRef, useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import "./SlideTabs.css";
+
+// Components
+import Logo from "./Logo";
+import Video from "./Video";
+import Photo from "./Photo";
+import Art from "./Art";
+
+const TABS = [
+  { label: "Logo", component: <Logo /> },
+  { label: "Video", component: <Video /> },
+  { label: "Photo", component: <Photo /> },
+  { label: "Art", component: <Art /> },
+];
+
+function SlideTabs() {
+  const [position, setPosition] = useState({
+    left: 0,
+    width: 0,
+    opacity: 1,
+  });
+
+  const [activeTab, setActiveTab] = useState("Logo");
+  const [hoveredTab, setHoveredTab] = useState(null);
+
+  const tabRefs = useRef({});
+  TABS.forEach((tab) => {
+    if (!tabRefs.current[tab.label]) {
+      tabRefs.current[tab.label] = React.createRef();
+    }
+  });
+
+  // Reset cursor to active tab when not hovering
+  useEffect(() => {
+    if (!hoveredTab) {
+      const node = tabRefs.current[activeTab]?.current;
+      if (!node) return;
+      const { width } = node.getBoundingClientRect();
+      setPosition({
+        left: node.offsetLeft,
+        width,
+        opacity: 1,
+      });
+    }
+  }, [hoveredTab, activeTab]);
+
+  return (
+    <>
+      <div className="slide-tabs grid">
+        <ul
+          onMouseLeave={() => setHoveredTab(null)}
+          className="slide-tabs-list pretendard"
+        >
+          {TABS.map((tab) => (
+            <Tab
+              key={tab.label}
+              label={tab.label}
+              setPosition={setPosition}
+              setHoveredTab={setHoveredTab}
+              setActiveTab={setActiveTab}
+              isActive={activeTab === tab.label}
+              ref={tabRefs.current[tab.label]}
+              activeTab={activeTab}
+            />
+          ))}
+          <Cursor position={position} />
+        </ul>
+      </div>
+
+      <div className="tab-content">
+        {TABS.find((tab) => tab.label === activeTab)?.component}
+      </div>
+    </>
+  );
+}
+
+const Tab = React.forwardRef(
+  ({ label, setPosition, setHoveredTab, setActiveTab, activeTab }, ref) => {
+    const updatePosition = () => {
+      if (!ref.current) return;
+      const { width } = ref.current.getBoundingClientRect();
+      setPosition({
+        left: ref.current.offsetLeft,
+        width,
+        opacity: 1,
+      });
+    };
+
+    const handleMouseEnter = () => {
+      setHoveredTab(label);
+      updatePosition();
+    };
+
+    const handleMouseLeave = () => {
+      setHoveredTab(null);
+    };
+
+    const handleClick = () => {
+      setActiveTab(label);
+      updatePosition();
+    };
+
+    return (
+      <li
+        ref={ref}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onClick={handleClick}
+        className="slide-tab"
+      >
+        {label}
+      </li>
+    );
+  }
+);
+
+const Cursor = ({ position }) => (
+  <motion.li
+    animate={position}
+    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+    className="slide-tab-cursor"
+  />
+);
+
+export default SlideTabs;
