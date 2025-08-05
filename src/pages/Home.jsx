@@ -53,7 +53,7 @@ function Home() {
 
     return(
         <>
-            <div className="container">
+            <section className="container">
                 {/* Banner */}
                 <div className="grid vertical-center home-banner">
                     <div className="col-8-md col-4-sm">
@@ -174,7 +174,7 @@ function Home() {
 
                     </div>
                 </div>
-            </div>
+            </section>
 
         </>
     )

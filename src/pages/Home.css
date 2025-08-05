@@ -336,7 +336,7 @@
     .tv-noise {
         position: absolute;
         inset: -100%;
-        background-image: url(../assets/images/noise4.png);
+        background-image: url(../assets/images/tv-noise.png);
         opacity: 10%;
         animation: shift 0.2s linear infinite both;
         pointer-events: none;

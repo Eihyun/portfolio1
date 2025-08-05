@@ -32,19 +32,35 @@ function SlideTabs() {
     }
   });
 
-  // Reset cursor to active tab when not hovering
-  useEffect(() => {
-    if (!hoveredTab) {
-      const node = tabRefs.current[activeTab]?.current;
-      if (!node) return;
-      const { width } = node.getBoundingClientRect();
+
+    // Function to update the cursor position to the active tab
+    const updateActivePosition = () => {
+      const activeNode = tabRefs.current[activeTab]?.current;
+      if (!activeNode) return;
+
+      const { width } = activeNode.getBoundingClientRect();
       setPosition({
-        left: node.offsetLeft,
-        width,
-        opacity: 1,
+          left: activeNode.offsetLeft,
+          width,
+          opacity: 1,
       });
-    }
+  };
+
+
+    // Keep cursor under active tab when hover ends
+    useEffect(() => {
+      if (!hoveredTab) {
+          updateActivePosition();
+      }
   }, [hoveredTab, activeTab]);
+
+  // Recalculate on window resize
+  useEffect(() => {
+      window.addEventListener("resize", updateActivePosition);
+      return () => {
+          window.removeEventListener("resize", updateActivePosition);
+      };
+  }, [activeTab]);
 
   return (
     <>
@@ -69,7 +85,7 @@ function SlideTabs() {
         </ul>
       </div>
 
-      <div className="tab-content">
+      <div className="tab-content grid">
         {TABS.find((tab) => tab.label === activeTab)?.component}
       </div>
     </>

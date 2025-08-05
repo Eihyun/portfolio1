@@ -53,3 +53,11 @@
         height: 3rem;
     }    
 }
+
+.tab-content {
+    background-color: white;
+    margin: 3rem 0;
+    padding: 3rem 5rem;
+    border: 2px solid black;
+    border-radius: 1.875rem;;
+}

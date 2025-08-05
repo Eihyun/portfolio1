@@ -55,13 +55,31 @@
     transform: scale(1.15);
 }
 
+.site-footer-left {
+    order: 2;
+}
+
+.site-footer-middle {
+    order: 3;
+}
+
+.site-footer-right {
+    order: 1;
+}
+
 @media screen and (min-width: 834px) {
     .site-footer-left {
         text-align: left;
+        order: 1;
     }
 
+    .site-footer-middle {
+        order: 2;
+    }
+    
     .site-footer-right {
         text-align: right;
+        order: 3;
     }
 
     .footer-icons {

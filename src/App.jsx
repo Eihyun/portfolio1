@@ -9,7 +9,6 @@ import Wicked from './pages/projects/Wicked';
 import Yogurt from './pages/projects/Yogurt';
 import Catoro from './pages/projects/Catoro';
 import SavetheOcean from './pages/projects/SavetheOcean';
-import StyleGuide from "./pages/StyleGuide";
 import PageNotFound from "./pages/404Page";
 
 function App() {

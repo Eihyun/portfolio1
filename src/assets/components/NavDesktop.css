@@ -1,6 +1,4 @@
 .nav-container {
-    position: static;
-    top: 0; left: 0;
     background-color: transparent;
     /* background-color: gray; */
     z-index: 1;
@@ -9,11 +7,9 @@
     user-select: none;
 }
 
-.navbar{
-    position: relative;
-}
 
 .navbar {
+    position: relative;
     display: flex;        
     flex-direction: column;
     align-items: center;
@@ -23,12 +19,7 @@
     flex-direction: row;
 }
 
-.nav-logo-icon {
-    height: 6rem;
-    vertical-align: middle;
-}
-
-.home-logo {
+/* .home-logo {
     width: 4rem;
 }
 
@@ -42,4 +33,36 @@
 
 .crafts-logo {
     width: 4.85rem;
+} */
+
+.nav-item > a {
+    position: relative;
+}
+
+.nav-text,
+.nav-logo-icon {
+    transition: opacity 50ms ease-in-out;
+}
+
+.nav-text {
+    opacity: 1;
+}
+
+.nav-logo-icon {
+    position: absolute;
+    opacity: 0;
+    height: 5rem;
+    left: 50%;
+    width: auto;
+    transform: scale(400% );
+}
+
+.nav-item:hover .nav-text,
+.nav-item.active .nav-text {
+    opacity: 0;
+}
+
+.nav-item:hover .nav-logo-icon,
+.nav-item.active .nav-logo-icon {
+    opacity: 1;
 }

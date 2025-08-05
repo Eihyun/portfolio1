@@ -31,7 +31,7 @@ const Pronounce = () => {
                     <span className="pronounce-tip pretendard">Click to hear it!</span>
                 )}
                 <audio src="../audio/fart.mp3" />
-                    <h3 className="loos-wide fw-7 pl-5 pronounce-name">Eihyun</h3>
+                <h3 className="loos-wide fw-7 pl-5 pronounce-name">Eihyun</h3>
             </div>
 
             <div className="phonetics">
