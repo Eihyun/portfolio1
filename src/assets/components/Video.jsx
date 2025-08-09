@@ -13,17 +13,17 @@ function Video() {
             title: 'Logo',
             label: 'Eihyun\'s Logo Animation',
             src: logoVideo,
-            description: 'Intro bumper as a parody of the Pixar intro, giving the logo a life of its own.'
+            description: 'An animated intro bumper as a parody of the Pixar intro, giving the logo a life of its own.'
         },
         {
             title: 'MythBusters',
             label: 'Myth Busters Animation',
             src: mythBustersVideo,
-            description: 'Created a 2D Mythbuster style animation, using motion graphics, background music, and sound effects.'
+            description: 'A 2D Mythbuster style animation, using motion graphics, background music, and sound effects.'
         },
         {
             title: 'ExtraL',
-            label: 'ExtraL - Jennie & Doechii',
+            label: 'Extra L - Jennie & Doechii',
             src: extraLVideo,
             description: "A fan-made lyric video that uses modern UI elements to amplify the lyrics, mixing graphic illustrations that pop in sync with the beat."
         },

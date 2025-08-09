@@ -18,7 +18,7 @@
 .email-copy-icon {
     position: relative;
     top: 0.3rem;
-    cursor: pointer;
+    cursor: copy;
     margin-left: 1rem;
 }
 

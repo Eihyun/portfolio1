@@ -13,6 +13,12 @@ html, body, #root {
     overflow: hidden;
 }
 
+html {
+    scrollbar-color: var(--quaternary) var(--tertiary);
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+}
+
 h1 {
     font-size: 3rem;
 }

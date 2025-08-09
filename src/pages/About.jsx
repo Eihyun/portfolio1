@@ -45,7 +45,7 @@ function About() {
                     </div>
 
                     <div className="col-6-lg col-12-md col-4-sm pretendard fw-4 about-intro_text">
-                        <p><span>Hello! I'm Eihyun.</span><br />(Not sure how to pronounce it? Scroll down to hear it)</p>
+                        <p><span>Hello! I'm Eihyun.</span><br />&#40;Not sure how to pronounce it? Scroll down to hear it👂&#41;</p>
                         <p>I’m a <span>front-end web developer</span> with a background in Media Communications and a sharp eye for detail. </p>
                         <p>Before transitioning into web development, I worked in video production, social media, and content strategy. These taught me how to create <span>digital content that resonates with people.</span></p>
                         <p>I deepened my technical skills through the <span>New Media Design and Web Development</span> program at BCIT. I’m always learning and focused on building intuitive, accessible websites and applications that provide seamless user experiences.</p>
@@ -71,12 +71,13 @@ function About() {
                         <StickerPeel
                             imageSrc={logoJs}
                             width={200}
-                            rotate={5}
+                            rotate={-3}
                             peelBackHoverPct={20}
                             peelBackActivePct={40}
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 180, y: 130 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -88,6 +89,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 330, y: 50 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -99,6 +101,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 490, y: 110 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -110,6 +113,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 650, y: 30 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -121,6 +125,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 800, y: 90 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -132,6 +137,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 950, y: 120 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -143,6 +149,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 1100, y: 10 }}
+                            peelDirection={180}
                             className="stickers"
                         />
 

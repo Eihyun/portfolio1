@@ -98,7 +98,9 @@
 }
 
 .about-intro_text > p > span {
-    color: var(--black);
+    background: linear-gradient(90deg, var(--secondary), var(--primary), var(--quaternary));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: 1.25rem;
 }
