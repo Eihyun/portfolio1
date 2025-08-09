@@ -1,3 +1,4 @@
+/* Logo Tab */
 .logo-title {
     text-align: center;
     font-size: 2rem;
@@ -26,7 +27,7 @@
 
 @media screen and (min-width: 834px) {
     .logo-sketch {
-        width: 20rem;
+        width: 18rem;
         height: 20rem;
     }
 }
@@ -62,29 +63,38 @@
     }
 }
 
+/* Video Tab */
 .video-gallery {
     display: flex;
     justify-content: space-between;
-        flex-direction: column;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .video-item {
-    width: 108%;
+    width: 100%;
 }
 
-@media screen and (min-width: 1440px) { 
-    .video-item {
+.video-title {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
 
+@media screen and (min-width: 834px) {
+    .video-title {
+        padding: 1.5rem 0;
+        font-size: 2rem;
     }
-
 }
 
 @media screen and (min-width: 1440px) { 
     .video-gallery {
         flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4rem;
     }
 
     .video-item {
-        width: 48%;
+        width: 47%;
     }
 }

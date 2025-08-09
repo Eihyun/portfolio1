@@ -62,9 +62,10 @@ function About() {
                             rotate={-3}
                             peelBackHoverPct={10}
                             peelBackActivePct={40}
-                            shadowIntensity={0.6}
+                            shadowIntensity={0.2}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 0, y: 20 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel

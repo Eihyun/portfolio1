@@ -3,26 +3,36 @@ import VideoJS from './VideoJS';
 
 import './TabContent.css';
 
+import logoVideo from '../video/LogoAnimation.mp4';
 import mythBustersVideo from '../video/MythBusters.mp4';
 import extraLVideo from '../video/ExtraL.mp4';
 
 function Video() {
     const videos = [
         {
+            title: 'Logo',
+            label: 'Eihyun\'s Logo Animation',
+            src: logoVideo,
+            description: 'Intro bumper as a parody of the Pixar intro, giving the logo a life of its own.'
+        },
+        {
             title: 'MythBusters',
-            src: mythBustersVideo
+            label: 'Myth Busters Animation',
+            src: mythBustersVideo,
+            description: 'Created a 2D Mythbuster style animation, using motion graphics, background music, and sound effects.'
         },
         {
             title: 'ExtraL',
-            src: extraLVideo
+            label: 'ExtraL - Jennie & Doechii',
+            src: extraLVideo,
+            description: "A fan-made lyric video that uses modern UI elements to amplify the lyrics, mixing graphic illustrations that pop in sync with the beat."
         },
     ];
 
     return (
         <div className="video-gallery col-12-md col-4-sm">
             {videos.map((video, index) => (
-            <div key={index} className="video-item">
-                <h3 className="pretendard">{video.title}</h3>
+            <div key={index} className="video-item pretendard">
                 <VideoJS
                 options={{
                     autoplay: false,
@@ -39,6 +49,8 @@ function Video() {
                 }}
                 className="video-player"
                 />
+                <h2 className="video-title">{video.label}</h2>
+                <p>{video.description}</p>
             </div>
             ))}
         </div>

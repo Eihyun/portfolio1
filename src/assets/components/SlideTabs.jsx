@@ -62,6 +62,13 @@ function SlideTabs() {
       };
   }, [activeTab]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <div className="slide-tabs grid">
@@ -87,6 +94,11 @@ function SlideTabs() {
 
       <div className="tab-content grid">
         {TABS.find((tab) => tab.label === activeTab)?.component}
+        <div className="col-12-md col-4-sm mt-6 mb-6 scroll-btn-container">
+          <button className="pretendard scroll-btn"
+          onClick={scrollToTop}
+          >Back to top</button>
+        </div>
       </div>
     </>
   );
