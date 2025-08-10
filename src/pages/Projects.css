@@ -10,32 +10,110 @@
     }
 }
 
-.project-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem 0 10rem;
-    gap: 4rem;
+/* Project list grid styling */
+.projects-list {
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 1.875rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+    
+.project-item-blank {
+    display: none;
 }
 
-@media screen and (min-width: 834px) {
-    .project-list {
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+@media screen and (max-width: 833px) {
+    .projects-list li:not(:nth-child(n)) {
+        border-right: 2px dashed black;
+    }
+    
+    .projects-list li:not(:nth-child(-n + 1)) {
+        border-top: 2px dashed black;
     }
 }
 
-.card-link {
-    width: 16rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@media screen and (min-width: 834px) and (max-width: 1439px) {
+    .projects-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-list li:not(:nth-child(even)) {
+        border-right: 2px dashed black;
+    }
+    
+    .projects-list li:not(:nth-child(-n + 2)) {
+        border-top: 2px dashed black;
+    }
 }
 
-.card-link > h2 {
-    font-size: 1.25rem;
+@media screen and (min-width: 1440px) {
+    .projects-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects-list li:not(:nth-child(3n)) {
+        border-right: 2px dashed black;
+    }
+
+    .projects-list li:not(:nth-child(-n + 3)) {
+        border-top: 2px dashed black;
+    }
+
+    .project-item-blank {
+        display: block;
+    }
+}
+
+/* Project item styling */
+.project-image {
+    margin: 0.7rem 0.7rem 0;
+    display: block;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 0.875rem;
+    overflow: hidden;
+}
+
+.project-image > img {
+    display: block;
+}
+
+.project-image::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: transparent;
+    mix-blend-mode: color;
+    transition: background-color 150ms ease-in-out;
+}
+
+.project-image:hover::after {
+    background-color: transparent;
+}
+
+.project-link {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 834px) {
+    .project-image::after {
+        background-color: var(--secondary);
+    }
+
+    .project-name:hover {
+        background-color: var(--dark);
+        color: white;
+    }
+
+    .project-case:hover {
+        text-decoration: underline;
+    }
 }

@@ -1,23 +1,34 @@
 [
     {
         "id": 1,
-        "name": "Save the Ocean",
-        "description": "Browser based interactive mini-game.",
-        "link": "savetheocean",
-        "image": "/images/STO_Cover.svg"
+        "name": "Simple Clinic",
+        "description": "Clinic website redesign project.",
+        "link": "simpleclinic",
+        "url": "https://simpleclinic.eihyunkim.com",
+        "image": "/images/Thumb_simpleclinic.png"
     },
     {
         "id": 2,
-        "name": "Yogurt Yoghurt Yogurté",
-        "description": "Website for a fictional froyo shop featured on the TV show The Good Place.",
-        "link": "yogurt",
-        "image": "/images/Yogurt_Cover.svg"
+        "name": "Save the Ocean",
+        "description": "Browser based interactive mini-game.",
+        "link": "savetheocean",
+        "url": "https://savetheocean.eihyunkim.com",
+        "image": "/images/Thumb_savetheocean.png"
     },
     {
         "id": 3,
+        "name": "Yogurt Yoghurt Yogurté",
+        "description": "Website for a fictional froyo shop featured on the TV show The Good Place.",
+        "link": "yogurt",
+        "url": "https://yogurt.eihyunkim.com",
+        "image": "/images/Thumb_yogurt.png"
+    },
+    {
+        "id": 4,
         "name": "Catoro Case Study",
         "description": "Case Study for Catoro Cat Cafe's adoption process.",
         "link": "catoro",
-        "image": "/images/Catoro_Cover.svg"
+        "url": "https://www.figma.com/proto/uKaGj9GKsSAi9GxwqsHjDF/UIUX-Project2?page-id=1%3A9&node-id=1-10&scaling=scale-down-width&content-scaling=fixed&t=KVGFabMX11TZNzlX-1",
+        "image": "/images/Thumb_catoro.png"
     }
 ]

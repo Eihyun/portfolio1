@@ -5,13 +5,13 @@ import "./SlideTabs.css";
 // Components
 import Logo from "./Logo";
 import Video from "./Video";
-import Photo from "./Photo";
+// import Photo from "./Photo";
 import Art from "./Art";
 
 const TABS = [
   { label: "Logo", component: <Logo /> },
   { label: "Video", component: <Video /> },
-  { label: "Photo", component: <Photo /> },
+  // { label: "Photo", component: <Photo /> },
   { label: "Art", component: <Art /> },
 ];
 

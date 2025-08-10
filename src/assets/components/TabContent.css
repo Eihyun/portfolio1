@@ -1,21 +1,23 @@
 /* Logo Tab */
 .logo-title {
     text-align: center;
-    font-size: 2rem;
 }
 
 .logo-subtitle {
     font-size: 1.5rem;
 }
 
-@media screen and (min-width: 834px) {
-    .logo-title {
-        font-size: 3rem;
-    }
+.logo-rough {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-    .logo-subtitle {
-        font-size: 2rem;
-    }    
+.logo-rough > img {
+    display: block;
+    width: 25%;
+    height: fit-content;
 }
 
 .logo-sketch {
@@ -25,16 +27,42 @@
     object-position: 30% 50%;
 }
 
-@media screen and (min-width: 834px) {
-    .logo-sketch {
-        width: 18rem;
-        height: 20rem;
-    }
+.logo-exp {
+    width: 12rem;
+    padding-right: 0rem;
 }
 
 .logo-ver {
     height: 7rem;
 }
+
+@media screen and (min-width: 834px) {
+    .logo-title {
+        font-size: 3rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 2rem;
+    }    
+
+    .logo-rough > img {
+        display: block;
+        width: 15%;
+        height: fit-content;
+    }
+
+    .logo-sketch {
+        width: 18rem;
+        height: 20rem;
+    }
+
+    .logo-exp {
+        width: 18rem;
+        padding-right: 5rem;
+    }
+
+}
+
 
 @media screen and (min-width: 834px) {
     .logo-ver {

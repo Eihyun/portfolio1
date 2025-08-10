@@ -9,6 +9,7 @@ import Wicked from './pages/projects/Wicked';
 import Yogurt from './pages/projects/Yogurt';
 import Catoro from './pages/projects/Catoro';
 import SavetheOcean from './pages/projects/SavetheOcean';
+import SimpleClinic from './pages/projects/SimpleClinic';
 import PageNotFound from "./pages/404Page";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/projects/yogurt" element={<Yogurt />} />
           <Route path="/projects/catoro" element={<Catoro />} />
           <Route path="/projects/savetheocean" element={<SavetheOcean />} />
+          <Route path="/projects/simpleclinic" element={<SimpleClinic />} />
           <Route path="/crafts" element={<Crafts />} />
           <Route path="*" element={<PageNotFound />} status={404} />
         </Route>
