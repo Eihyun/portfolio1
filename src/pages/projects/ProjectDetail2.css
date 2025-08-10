@@ -37,24 +37,29 @@
     text-align: center;
 }
 
+/* Ordered + Unordered list */
 .case-table ul {
     font-size: 1.25rem;
 }
 
-.case-body ul, ol {
+.case-text ul, .case-text ol {
     width: fit-content;
-    margin: 0 2rem;
+    padding: 0 2rem;
 }
 
 .case-body ol {
     list-style-type: decimal-leading-zero;
 }
 
-.case-body ul {
+.case-text ol li {
+    list-style-position: inside;
+}
+
+.case-text ul {
     list-style-type: disc;
 }
 
-.case-body ul li + li, .case-body ol li + li {
+.case-text ul li + li, .case-text ol li + li, .case-text p + ul, .case-text p + ol {
     margin-top: 1rem;
 }
 
@@ -82,10 +87,10 @@
     width: 80%;
     max-width: 45rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
 }
 
 .footnote {

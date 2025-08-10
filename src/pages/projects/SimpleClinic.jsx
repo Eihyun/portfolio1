@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
+
+// Components
+import CodeBlock from '../../assets/components/CodeBlock';
+
+// CSS
 import "./ProjectDetail2.css";
 
+// Media
 import SimpleClinicOG from '../../assets/video/SimpleClinic_OG.mp4';
 
 function SimpleClinic() {
@@ -11,6 +17,7 @@ function SimpleClinic() {
                 <h1 className="case-title noka fw-6">Case Study: Simple Clinic</h1>
             </div>
             <div className="col-12-md col-4-sm case-body-container pretendard">
+                {/* Visit link */}
                 <div className="case-body">
                     <div className="case-text case-visit">
                         <p>
@@ -20,6 +27,7 @@ function SimpleClinic() {
                         </p>
                     </div>
                 </div>
+                {/* Table */}
                 <div className="case-body">
                     <div className="case-text case-table ">
                         <h2 className="case-subtitle fw-6">Table of Content</h2>
@@ -60,7 +68,7 @@ function SimpleClinic() {
                         <figcaption className="footnote">How original website looked like</figcaption>
                     </figure>
                     <div className="case-text">
-                        <p className='mb-5'>Sally handled the visual design, creating finalized<a href="https://www.figma.com/design/S1fq7p2EeYYKyxpNvPYcgq/Final_-Simple-Clinic?node-id=0-1&t=JdteIlN8TU3MsrUy-1" className='case-link'>Figma</a> layouts based on the brand and user experience. My role was to translate those design into a fully functional, responsive React application. This included:</p>
+                        <p>Sally handled the visual design, creating finalized<a href="https://www.figma.com/design/S1fq7p2EeYYKyxpNvPYcgq/Final_-Simple-Clinic?node-id=0-1&t=JdteIlN8TU3MsrUy-1" className='case-link'>Figma</a> layouts based on the brand and user experience. My role was to translate those design into a fully functional, responsive React application. This included:</p>
                         <ul>
                             <li>Setting up the dev environment and project structure.</li>
                             <li>Building pages and components to match the design specifications.</li>
@@ -77,7 +85,45 @@ function SimpleClinic() {
                         <h2 className="case-subtitle fw-6" id="goals">Development Goals</h2>
                         <p>From the start, my priamry responsibility was to implement the designs in a way that was both visually accurate and technically sound. The development goal included performance, accessibility, and maintainability requirements taht would ensure the site could serve users efficiently over time.</p>
                         <ol>
-                            <li>Establish</li>
+                            <li>Configure a React environment suitable for production deployment.</li>
+                            <li>Organized the folder structure for scalability, separating components, assets, and styles.
+                            <CodeBlock language='plaintext'>
+                                {`src/
+├── assets/
+│   ├── components/
+│   │   ├── Navigation.jsx
+│   │   ├── NavMobile.jsx
+│   │   ├── Map.jsx
+│   │   └── Form.jsx
+│   │   └── PrimaryBtn.jsx
+│   │   └── Testimonial.jsx
+│   ├── images/
+│   │   ├── Logo_v1.png
+│   │   ├── ham-menu.svg
+│   │   └── close.svg
+│   └── styles/
+│       ├── Header.css
+│       ├── Navigation.css
+│       └── NavMobile.css
+├── global/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   └── Layout.jsx
+├── hooks/
+│   └── useMediaQuery.js
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   └── Services.jsx
+├── App.jsx
+└── main.jsx`}
+                            </CodeBlock>
+                            </li>
+                            <li>Use reusable, modular components to make updates efficient.</li>
+                            <li>Maintain accessibility through semantic markup.</li>
+                            <li>Apply CSS media queries for conditional rendering, test and refine layouts for desktop, tablet, and mobile devices.</li>
+                            <li>Minimize layout shifts and avoid unnecessary re-renders.</li>
+                            <li>Ensure smooth transitions and animations without performance drops.</li>
                         </ol>
                     </div>
                 </div>

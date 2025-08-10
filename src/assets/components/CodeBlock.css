@@ -1,0 +1,8 @@
+.code-block {
+    overflow-x: auto;
+    margin: 3rem;
+    border-radius: 8px;
+    border: 0.5rem solid var(--quaternary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}  
