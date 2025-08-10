@@ -23,7 +23,7 @@ function SavetheOcean() {
                 </div>
                 <div className="case-body">
                     <div className="case-text">
-                        <h2 className="case-subtitle">Goal</h2>
+                        <h2 className="case-subtitle">Project overview</h2>
                     </div>
                 </div>
                 <div className="case-body">
