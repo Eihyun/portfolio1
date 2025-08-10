@@ -133,7 +133,7 @@ main {
 
 }
 
-.about, .craft {
+.about, .craft, .project-detail {
     display: block;
     min-width: 20rem;
     width: 85vw;
@@ -141,13 +141,13 @@ main {
 }
 
 @media screen and (min-width: 834px) {
-    .about, .craft {
+    .about, .craft, .project-detail {
         width: 48.125rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .about, .craft {
+    .about, .craft, .project-detail {
         width: 80rem;
     }
 }

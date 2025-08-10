@@ -97,13 +97,17 @@
 }
 
 .project-link {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 @media screen and (min-width: 834px) {
+    .project-link {
+        padding: 1rem;
+    }
+
     .project-image::after {
         background-color: var(--secondary);
     }
