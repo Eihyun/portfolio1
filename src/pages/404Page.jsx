@@ -13,7 +13,8 @@ const PageNotFound = () => {
                 <div className='error'>
                     <img src={SubmarkBad} alt="" />
                     <h2 className='pretendard fw-9 mb-6'>It's okay not to be 200 OK.</h2>
-                    <p className='pretendard mb-4'>A little dev humor. 200 OK means success. You reached a 404 instead.</p>
+                    <p className='pretendard mb-4'>A little dev humor. 200 OK means success.</p>
+                    <p className='pretendard mb-4'>You reached a 404 instead, which means not found.</p>
                 </div>
             </div>
         </div>

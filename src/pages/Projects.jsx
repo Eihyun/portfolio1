@@ -40,7 +40,9 @@ function Projects() {
                                     </a>
                                 </p>
                                 <p>
-                                ✏️ <Link to={`/projects/${project.link}`} className="project-case">Case study</Link>
+                                ✏️ <Link to={`/projects/${project.link}`} 
+                                onClick={() => {window.scroll(0,0)}} 
+                                className="project-case">Case study</Link>
                                 </p>
                             </div>
                         </li>

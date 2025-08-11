@@ -14,6 +14,7 @@ import LogoExp1 from '../../assets/images/logo-exploration1.png';
 import LogoExp2 from '../../assets/images/logo-exploration2.png';
 import LogoFinal1 from '../../assets/images/logo-final.png';
 import LogoFinal2 from '../../assets/images/logo-submark.png';
+import LogoStickers from '../../assets/images/logo-stickers.jpg';
 import LogoBrush from "../../assets/images/Eihyun_brush.svg";
 import LogoCoffee from "../../assets/images/Eihyun_coffee.svg";
 import LogoLaptop from "../../assets/images/Eihyun_laptop.svg";
@@ -63,8 +64,15 @@ function Logo() {
                 <img src={LogoExp1} alt="Exploration with the logo 1" className="logo-exp"/>
                 <img src={LogoExp2} alt="Exploration with the logo 2" className="logo-exp" />
                 <p className=" logo-text pretendard mt-6 mb-6">While the character came together fairly easily, the background was a bit trickier. I experimented with several options, but then I decided to go with a simple background that wouldn’t detract from the mascot itself.</p>
+            </div>
+
+            {/* Final Results */}
+            <div className="col-12-md col-4-sm mt-8">
+                <h2 className="logo-subtitle pretendard fw-6 mb-6">Final Results</h2>
                 <img src={LogoFinal1} alt="Exploration with the logo 1" className="logo-exp"/>
                 <img src={LogoFinal2} alt="Exploration with the logo 2" className="logo-exp" />
+                <p className=" logo-text pretendard">Once the main logo was finished, I created primary, secondary, and submark versions for flexibility across different uses. To take it further, I made stickers featuring the logo and a link to my portfolio. They’re an easy way to hand something memorable to people when networking, reinforcing my brand identity while doubling as a creative alternative to business cards.</p>
+                <img src={LogoStickers} alt="Exploration with the logo 2" className="logo-stickers" />
             </div>
 
             {/* Versions */}

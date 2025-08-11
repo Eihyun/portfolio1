@@ -68,6 +68,7 @@ function SimpleClinic() {
                 <div className="case-body">
                     <div className="case-text">
                         <h2 className="case-subtitle fw-6" id="overview">Project Overview</h2>
+                        <h3 className="case-subtitle">Tech stack: React.js, React Router, CSS, React Hook Form, Yup, FormSubmit, Swiper</h3>
                         <p>This project began when the designer I collaborated with, Sally, who is also my classmate, was approached by a friend who owns Simple Clinic, a health and wellness business. The client needed a redesigned website to present their services more clearly, improve navigation, and make booking or contacting the clinic straightforward for users.</p>
                         
                         <p>It was my first tiem working on a real-world project outside of school, which meant I needed to be deliberate with the project setup and architecture. I treated the initial phase as critical to ensuring the site could be developed efficiently and maintained easily in the future.</p>
@@ -195,7 +196,7 @@ function SimpleClinic() {
     }
 }`}</CodeBlock>
                         <p>I set up a global <code>main.css</code> to hold all the core design tokens, so I could treat class names almost like small building-block components. This kept styles consistent across the site and made it easier to assemble layouts without rewriting the same CSS.</p>
-                        <p>When it came time to match the layout to the wireframes, I used the <a href="https://www.welldonecode.com/perfectpixel/" target="_blank" className="case-link">PerfectPixel</a> Chrome plugin to overlay the design on top of the live site. That said, I learned the hard way that chasing true “pixel perfection” is a trap.</p>
+                        <p>When it came time to match the layout to the wireframes, I used the <a href="https://www.welldonecode.com/perfectpixel/" target="_blank" className="case-link">PerfectPixel</a> Chrome extension to overlay the design on top of the live site. That said, I learned the hard way that chasing true “pixel perfection” is a trap.</p>
                         <figure className="case-image">
                             <img src={LayoutComparison} alt="" />
                             <figcaption className="footnote">Left: wireframe. Right: live website.</figcaption>
@@ -254,7 +255,7 @@ const onValid = () => formRef.current?.submit();
                 {/* Reflection */}
                 <div className="case-body">
                     <div className="case-text">
-                        <h2 className="case-subtitle fw-6" id="reflection">Reflection</h2>
+                        <h2 className="case-subtitle fw-6" id="reflection">Reflection & Next Step</h2>
                         <p>One of the biggest takeaways from this project is that communication is an ongoing part of the work when working with a designer or a team. I focused on the dev side and tried not to overstep into design decisions, but I still had a ton of questions as I went. The more I asked, the smoother the build went.</p>
                         <p>I also learned that “pixel perfect” isn’t a realistic goal, and that's okay. What is realistic is writing better code while meeting the design requirements, so the designer is happy, the client is happy, and I can still sleep at night. 😴</p>
                         <p>Looking ahead, Sally and I plan to deploy the site on the client’s actual domain and continue maintaining it. I’ll keep adding new challenges and solutions here on this project’s detail page in my portfolio. I’m especially looking forward to learning more about the deployment process and what it takes to keep a live site running smoothly over time.</p>
@@ -283,7 +284,9 @@ const onValid = () => formRef.current?.submit();
                         <Link to="/projects">All Project</Link>
                     </div>
                     <div className="next">
-                        <Link to="/projects/savetheocean">Next ➡️</Link>
+                        <Link to="/projects/savetheocean"
+                        onClick={() => {window.scroll(0,0)}} 
+                        >Next ➡️</Link>
                     </div>
                 </nav>
 

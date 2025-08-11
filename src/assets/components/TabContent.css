@@ -32,6 +32,11 @@
     padding-right: 0rem;
 }
 
+.logo-stickers {
+    margin-top: 1rem;
+    width: 40rem;
+}
+
 .logo-ver {
     height: 7rem;
 }
@@ -60,13 +65,12 @@
         width: 18rem;
         padding-right: 5rem;
     }
-
 }
 
 
 @media screen and (min-width: 834px) {
     .logo-ver {
-        height: 15rem;
+        height: 13rem;
     }
 }
 

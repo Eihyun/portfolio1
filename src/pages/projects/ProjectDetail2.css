@@ -29,7 +29,7 @@
     padding: 0 3rem;
 }
 
-.case-text p + p {
+.case-text p + p, .case-text ol + p {
     margin-top: 1.5rem;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .case-link:hover {
-    display: inline-block;
+    display: inline;
     background-color: var(--dark);
     color: white;
 }
