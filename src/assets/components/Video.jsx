@@ -40,7 +40,7 @@ function Video() {
                     responsive: true,
                     fluid: true,
                     sources: [{ src: video.src, type: 'video/mp4' }],
-                    poster: `src/assets/images/Preview_${video.title}.png`
+                    poster: `/assets/images/Preview_${video.title}.png`
                 }}
                 onReady={(player) => {
                     // Optional event hooks
