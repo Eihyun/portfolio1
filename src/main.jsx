@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router';
 import App from './App.jsx'
 
 import "the-new-css-reset/css/reset.css";
-import 'highlight.js/styles/github.css';
+import 'highlight.js/styles/shades-of-purple.css';
 import "./main.css";
 
 createRoot(document.getElementById('root')).render(

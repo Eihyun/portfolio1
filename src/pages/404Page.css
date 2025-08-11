@@ -5,5 +5,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
+}
+
+.error-container h1 {
+    font-size: 5rem;
+    color: var(--primary);
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error img {
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.error h2 {
+    font-size: 2.5rem;
+}
+
+.error p {
+    font-size: 1.25rem;
 }
