@@ -8,7 +8,7 @@ import SideBar from '../../assets/components/SideBar';
 import "./ProjectDetail2.css";
 
 // Media
-import RecyclingBins from '../../assets/images/recycling-bins.JPG';
+import RecyclingBins from '../../assets/images/recycling-bins.png';
 import WasteItems from '../../assets/images/waste-items.png';
 import GameFlow from '../../assets/images/game-flow.png';
 import GameInstruction from '../../assets/images/game-instruction.png';
