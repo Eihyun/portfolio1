@@ -33,7 +33,7 @@ function Footer() {
                             </div>
                         </div>
                         <div className="site-footer-middle col-4-lg col-5-md col-4-sm noka">
-                            Built and designed by Eihyun<br />
+                            Built and designed by Eihyun 🍲<br />
                             Slowly, like cooking hot soup. © 2025 
                         </div>
                         <div className="site-footer-right col-4-lg col-3-md col-4-sm">

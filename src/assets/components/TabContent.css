@@ -1,0 +1,132 @@
+/* Logo Tab */
+.logo-title {
+    text-align: center;
+}
+
+.logo-subtitle {
+    font-size: 1.5rem;
+}
+
+.logo-rough {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-rough > img {
+    display: block;
+    width: 25%;
+    height: fit-content;
+}
+
+.logo-sketch {
+    width: 10rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: 30% 50%;
+}
+
+.logo-exp {
+    width: 12rem;
+    padding-right: 0rem;
+}
+
+.logo-stickers {
+    margin-top: 1rem;
+    width: 40rem;
+}
+
+.logo-ver {
+    height: 7rem;
+}
+
+@media screen and (min-width: 834px) {
+    .logo-title {
+        font-size: 3rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 2rem;
+    }    
+
+    .logo-rough > img {
+        display: block;
+        width: 15%;
+        height: fit-content;
+    }
+
+    .logo-sketch {
+        width: 18rem;
+        height: 20rem;
+    }
+
+    .logo-exp {
+        width: 18rem;
+        padding-right: 5rem;
+    }
+}
+
+
+@media screen and (min-width: 834px) {
+    .logo-ver {
+        height: 13rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .logo-ver {
+        height: 20rem;
+    }
+}
+
+.logo-ver img {
+    max-height: 100%;
+}
+
+.logo-animation {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 834px) {
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Video Tab */
+.video-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.video-item {
+    width: 100%;
+}
+
+.video-title {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 834px) {
+    .video-title {
+        padding: 1.5rem 0;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) { 
+    .video-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+    .video-item {
+        width: 47%;
+    }
+}

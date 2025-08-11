@@ -17,7 +17,6 @@ import Magnet from '../assets/components/Magnet';
 
 // images
 import HomeBannerVhs from "../assets/images/home-banner_vhs.svg";
-import HomeTv from "../assets/images/home-tv.png";
 import Yogurt from "../assets/images/Yogurt_Preview.png";
 import Catoro from "../assets/images/Catoro_Preview.png";
 import STO from "../assets/images/STO_Preview.png";
@@ -53,7 +52,7 @@ function Home() {
 
     return(
         <>
-            <div className="container">
+            <section className="container">
                 {/* Banner */}
                 <div className="grid vertical-center home-banner">
                     <div className="col-8-md col-4-sm">
@@ -174,7 +173,7 @@ function Home() {
 
                     </div>
                 </div>
-            </div>
+            </section>
 
         </>
     )

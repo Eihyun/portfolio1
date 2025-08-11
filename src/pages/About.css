@@ -6,25 +6,12 @@
 
 .about-title > h1 {
     text-align: center;
-}
-
-.about-title > img{
-    width: 100%;
-    padding: 2rem 0;
+    padding-bottom: 4rem;
 }
 
 @media screen and (min-width: 834px) {
-    .about-title > img{
-        width: 80%;
-        padding: 2rem 0;
-    }
-    
-}
-
-@media screen and (min-width: 1440px) {
-    .about-title > img{
-        width: 50%;
-        padding: 2rem 0;
+    .about-title > h1 {
+        padding-bottom: 2rem;
     }
 }
 
@@ -33,8 +20,10 @@
     z-index: 1;
     background: #fff;
     width: 100%;
-    padding: 10px 10px 60px;
+    padding: 10px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-intro_img {
@@ -42,6 +31,11 @@
     object-fit: cover;
     aspect-ratio: 1/1;
 }
+
+.about-intro_img-container > span {
+    align-self: end;
+}
+
 
 .about-intro_img-logo {
     display: block;
@@ -53,16 +47,16 @@
 }
 
 @keyframes mic {
-    0% { transform: scale(160%) rotate(0); left: -6rem; }
-    50% { transform: scale(160%) rotate(20deg); left: -1rem; }
-    100% { transform: scale(160%) rotate(0); left: -6rem; }
+    0% { transform: scale(160%) rotate(0); left: -7rem; }
+    50% { transform: scale(160%) rotate(20deg); left: -3rem; }
+    100% { transform: scale(160%) rotate(0); left: -7rem; }
 }
 
 
 @media screen and (min-width: 834px) {
     .about-intro_img-container {
         width: 90%;
-        padding: 25px 25px 80px;
+        padding: 25px;
     }
 
     @keyframes mic {
@@ -102,8 +96,11 @@
 }
 
 .about-intro_text > p > span {
-    color: var(--black);
+    background: linear-gradient(90deg, var(--secondary), var(--primary), var(--quaternary));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 600;
+    font-size: 1.25rem;
 }
 
 @media screen and (min-width: 834px) {

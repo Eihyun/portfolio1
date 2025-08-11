@@ -23,22 +23,32 @@ function Projects() {
             <div className="container">
                 <div className="grid">
                     <h1 className="col-12-md col-4-sm project-page_title loos-wide fw-6">Featured Projects</h1>
-                    <ul className="col-12-md col-4-sm project-list">
-
+                    <ul className="col-12-md col-4-sm mt-8 projects-list">
                         {projects.map(project => (
-                        <li key={project.id} className="project-list-item">
-                            <Link
-                            to={`/projects/${project.link}`}
-                            className="card-link"
-                            onClick={() => window.scroll(0, 0)}
-                            >
-                                <h2 className="pretendard fw-6 mb-4">{project.name}</h2>
-                                <VhsCover image={project.image} alt={`${project.name} VHS Cover`} />
-                                <p className="pretendard fw-4 mt-4 mb-4">{project.description}</p>
-                            </Link>
+                        <li key={project.id} className="project-item">
+                            <a href={project.url} 
+                            target='_blank'
+                            className="project-image">
+                                <img src={project.image} /> 
+                            </a>
+                            <div className="project-link pretendard">
+                                <p>
+                                    <a href={project.url}
+                                    target='_blank'
+                                    className="project-name fw-6">
+                                    {project.name}
+                                    </a>
+                                </p>
+                                <p>
+                                ✏️ <Link to={`/projects/${project.link}`} 
+                                onClick={() => {window.scroll(0,0)}} 
+                                className="project-case">Case study</Link>
+                                </p>
+                            </div>
                         </li>
                         ))}
-
+                        <li className="project-item-blank"></li>
+                        <li className="project-item-blank"></li>
                     </ul>
                 </div>
             </div>

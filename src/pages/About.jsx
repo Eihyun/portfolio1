@@ -26,17 +26,18 @@ function About() {
         <>
             <title>Learn More About Eihyun</title>
             <meta name="description" content="Learn about Eihyun Kim, a frontend developer focused on human-centered design." />
-            <div className="container">
+            <section className="about">
                 <div className="grid vertical-center mt-4 about-intro">
                     <div className="col-12-md col-4-sm mb-4">
                         <div className="about-title">
                             <h1 className="loos-wide fw-7">About Me</h1>
-                            <img src={mission} alt="I believe in user-centered digital experience that foster a sense of belonging for everyone." />
                         </div>
                     </div>
                     <div className="col-5-lg col-8-md col-3-sm mb-4">
                         <div className="about-intro_img-container">
                             <img src={myImg3} className="about-intro_img" alt="Profile image of Eihyun Kim" />
+                            <img src={mission} className="about-mission" alt="Mission: I believe in user-centered digital experience that foster a sense of belonging for everyone." />
+                            <span className="pretendard">- Eihyun 🌈</span>
                         </div>
                     </div>
                     <div className="col-1-lg col-4-md col-1-sm">
@@ -44,7 +45,7 @@ function About() {
                     </div>
 
                     <div className="col-6-lg col-12-md col-4-sm pretendard fw-4 about-intro_text">
-                        <p><span>Hello! I'm Eihyun.</span><br />(Not sure how to pronounce it? Scroll down to hear it)</p>
+                        <p><span>Hello! I'm Eihyun.</span><br />&#40;Not sure how to pronounce it? Scroll down to hear it👂&#41;</p>
                         <p>I’m a <span>front-end web developer</span> with a background in Media Communications and a sharp eye for detail. </p>
                         <p>Before transitioning into web development, I worked in video production, social media, and content strategy. These taught me how to create <span>digital content that resonates with people.</span></p>
                         <p>I deepened my technical skills through the <span>New Media Design and Web Development</span> program at BCIT. I’m always learning and focused on building intuitive, accessible websites and applications that provide seamless user experiences.</p>
@@ -61,20 +62,22 @@ function About() {
                             rotate={-3}
                             peelBackHoverPct={10}
                             peelBackActivePct={40}
-                            shadowIntensity={0.6}
+                            shadowIntensity={0.2}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 0, y: 20 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
                             imageSrc={logoJs}
                             width={200}
-                            rotate={5}
+                            rotate={-3}
                             peelBackHoverPct={20}
                             peelBackActivePct={40}
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 180, y: 130 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -86,6 +89,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 330, y: 50 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -97,6 +101,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 490, y: 110 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -108,6 +113,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 650, y: 30 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -119,6 +125,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 800, y: 90 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -130,6 +137,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 950, y: 120 }}
+                            peelDirection={180}
                             className="stickers"
                         />
                         <StickerPeel
@@ -141,6 +149,7 @@ function About() {
                             shadowIntensity={0.6}
                             lightingIntensity={0.1}
                             initialPosition={{ x: 1100, y: 10 }}
+                            peelDirection={180}
                             className="stickers"
                         />
 
@@ -150,7 +159,7 @@ function About() {
                 <div className="grid vertical-center mt-8 about-pronun">
                     <div className="col-12-md col-4-sm about-pronun_text">
                         <h2 className="loos-wide fw-7">How to pronounce?</h2>
-                        <h3 className="h3 loos-normal fw-5">If you want to learn how to actually pronounce my Korean name...</h3>
+                        <h3 className="h3 loos-normal fw-5">If you want to learn how to pronounce my Korean name...</h3>
                     </div>
                     <div className="col-12-md col-4-sm about-pronun_break">
                         <Pronounce />
@@ -160,7 +169,7 @@ function About() {
                 <div className="grid vertical-center mt-8 about-more">
 
                 </div>
-            </div>
+            </section>
         </>
     )
 

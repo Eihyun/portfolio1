@@ -13,6 +13,16 @@ html, body, #root {
     overflow: hidden;
 }
 
+html {
+    scrollbar-color: var(--quaternary) var(--tertiary);
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+}
+
+img {
+    pointer-events: none;
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -22,12 +32,17 @@ h2 {
 }
 
 p {
+    line-height: 150%;
     text-wrap: pretty;
 }
 
 p::selection {
     background-color: var(--dark);
     color: white;
+}
+
+em {
+    font-style: italic;
 }
 
 /* Colors */
@@ -116,6 +131,25 @@ main {
     .col-11-lg { grid-column: span 11; }
     .col-12-lg { grid-column: span 12; }
 
+}
+
+.about, .craft, .project-detail {
+    display: block;
+    min-width: 20rem;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 834px) {
+    .about, .craft, .project-detail {
+        width: 48.125rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about, .craft, .project-detail {
+        width: 80rem;
+    }
 }
 
 /* Spacing */
@@ -214,3 +248,16 @@ main {
 .fw-7 { font-weight: 700; }
 .fw-8 { font-weight: 800; }
 .fw-9 { font-weight: 900; }
+
+/* Code */
+p code {
+    padding: 3px 5px;
+    border: 1px dotted black;
+    background-color: var(--light);
+    align-self: center;
+    color: var(--dark);
+}
+
+.snippet {
+    background-color: var(--quaternary);
+}

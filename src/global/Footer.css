@@ -18,7 +18,7 @@
 .email-copy-icon {
     position: relative;
     top: 0.3rem;
-    cursor: pointer;
+    cursor: copy;
     margin-left: 1rem;
 }
 
@@ -48,20 +48,38 @@
 }
 
 .banner-icon {
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease-in-out;
 }
 
 .banner-icon:hover {
     transform: scale(1.15);
 }
 
+.site-footer-left {
+    order: 2;
+}
+
+.site-footer-middle {
+    order: 3;
+}
+
+.site-footer-right {
+    order: 1;
+}
+
 @media screen and (min-width: 834px) {
     .site-footer-left {
         text-align: left;
+        order: 1;
     }
 
+    .site-footer-middle {
+        order: 2;
+    }
+    
     .site-footer-right {
         text-align: right;
+        order: 3;
     }
 
     .footer-icons {
