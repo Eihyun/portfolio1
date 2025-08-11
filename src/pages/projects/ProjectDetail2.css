@@ -29,6 +29,10 @@
     padding: 0 3rem;
 }
 
+.case-text h3 {
+    color: var(--secondary)
+}
+
 .case-text p + p, .case-text ol + p {
     margin-top: 1.5rem;
 }

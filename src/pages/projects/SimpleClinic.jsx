@@ -23,7 +23,7 @@ function SimpleClinic() {
             </div>
             <div className="col-12-md col-4-sm case-body-container pretendard">
                 {/* Visit link */}
-                <div className="case-body">
+                <div className="case-body case-visit-container">
                     <div className="case-text case-visit">
                         <p>
                             <em>Visit the website to view:
@@ -33,8 +33,8 @@ function SimpleClinic() {
                     </div>
                 </div>
                 {/* Table */}
-                <div className="case-body">
-                    <div className="case-text case-table ">
+                <div className="case-body case-table-container">
+                    <div className="case-text case-table">
                         <h2 className="case-subtitle fw-6">Table of Content</h2>
                         <ul>
                             <li>

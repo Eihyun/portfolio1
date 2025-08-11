@@ -8,6 +8,11 @@
     justify-content: center;
 }
 
+.site-header__logo-container {
+    display: block;
+    height: 100%;
+}
+
 .site-header__logo {
     max-width: 3.5rem;
 }

@@ -16,7 +16,7 @@ function Header() {
             <div className="container">
                 <div className="grid vertical-center">
                     <div className="col-3-md col-1-sm">
-                        <Link to="/">
+                        <Link to="/" className="site-header__logo-container">
                             <img src={submark} className="site-header__logo" alt="Logo" />
                         </Link>
                     </div>

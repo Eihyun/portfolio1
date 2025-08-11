@@ -2,17 +2,27 @@ import { Link } from 'react-router-dom';
 
 // Components
 import CodeBlock from '../../assets/components/CodeBlock';
+import SideBar from '../../assets/components/SideBar';
 
 // CSS
 import "./ProjectDetail2.css";
 
 // Media
-import RecyclingBins from '../../assets/images/recycling-bins.png';
+import RecyclingBins from '../../assets/images/recycling-bins.JPG';
 import WasteItems from '../../assets/images/waste-items.png';
 import GameFlow from '../../assets/images/game-flow.png';
 import GameInstruction from '../../assets/images/game-instruction.png';
 
 function SavetheOcean() {
+    // table of content
+    const tocItems = [
+        { href: "#overview",  label: "Project Overview" },
+        { href: "#goals",     label: "Development Goals" },
+        { href: "#gameflow",  label: "Game Flow" },
+        { href: "#handling",  label: "Multiple Condition Handling" },
+        { href: "#onboarding",label: "Player Onboarding" },
+        { href: "#reflection",label: "Reflection & Next Step" },
+    ];
 
     return(
         <section className="grid project-detail">
@@ -293,6 +303,8 @@ function fail() {
                 </nav>
 
             </div>
+
+            <SideBar items={tocItems} />
         </section>
 
     )
