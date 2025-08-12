@@ -17,7 +17,7 @@ import FormDemo from '../../assets/images/FormDemo.gif';
 function SimpleClinic() {
 
     return(
-        <section className="grid project-detail">
+        <section className="grid projects-detail">
             <div className="col-12-md col-4-sm">
                 <h1 className="case-title noka fw-6">Case Study: Simple Clinic</h1>
             </div>
@@ -71,7 +71,7 @@ function SimpleClinic() {
                         <h3 className="case-subtitle">Tech stack: React.js, React Router, CSS, React Hook Form, Yup, FormSubmit, Swiper</h3>
                         <p>This project began when the designer I collaborated with, Sally, who is also my classmate, was approached by a friend who owns Simple Clinic, a health and wellness business. The client needed a redesigned website to present their services more clearly, improve navigation, and make booking or contacting the clinic straightforward for users.</p>
                         
-                        <p>It was my first tiem working on a real-world project outside of school, which meant I needed to be deliberate with the project setup and architecture. I treated the initial phase as critical to ensuring the site could be developed efficiently and maintained easily in the future.</p>
+                        <p>It was my first time working on a real-world project outside of school, which meant I needed to be deliberate with the project setup and architecture. I treated the initial phase as critical to ensuring the site could be developed efficiently and maintained easily in the future.</p>
                     </div>
                     <figure className='case-video'>
                         <video src={SimpleClinicOG} preload='metadata' autoPlay loop muted playsInline></video>

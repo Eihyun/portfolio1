@@ -116,9 +116,17 @@
     color: var(--gray);
 }
 
+.projects-detail {
+    margin: 0 auto;
+    width: 80vw;
+    min-width: 320px;
+    max-width: 1440px;
+}
+
 /* Media Query */
 @media screen and (min-width: 834px) {
-    .project-detail p, .case-text > ul, ol {
+
+    .projects-detail p, .case-text > ul, ol {
         font-size: 1.25rem;
     }
 }

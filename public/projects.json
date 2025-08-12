@@ -4,6 +4,7 @@
         "name": "Simple Clinic",
         "description": "Clinic website redesign project.",
         "link": "simpleclinic",
+        "type": "development",
         "url": "https://simpleclinic.eihyunkim.com",
         "github": "https://github.com/Eihyun/Simple_Clinic_2025",
         "image": "/images/Thumb_simpleclinic.png"
@@ -13,6 +14,7 @@
         "name": "Save the Ocean",
         "description": "Browser based interactive mini-game.",
         "link": "savetheocean",
+        "type": "development",
         "url": "https://savetheocean.eihyunkim.com",
         "github": "https://github.com/Eihyun/SavetheOcean",
         "image": "/images/Thumb_savetheocean.png"
@@ -22,6 +24,7 @@
         "name": "Yogurt Yoghurt Yogurté",
         "description": "Website for a fictional froyo shop featured on the TV show The Good Place.",
         "link": "yogurt",
+        "type": "development",
         "url": "https://yogurt.eihyunkim.com",
         "github": "https://github.com/Eihyun/MDIA2294-TermProject",
         "image": "/images/Thumb_yogurt.png"
@@ -31,6 +34,7 @@
         "name": "Catoro Case Study",
         "description": "Case Study for Catoro Cat Cafe's adoption process.",
         "link": "catoro",
+        "type": "design",
         "url": "https://www.figma.com/proto/uKaGj9GKsSAi9GxwqsHjDF/UIUX-Project2?page-id=1%3A9&node-id=1-10&scaling=scale-down-width&content-scaling=fixed&t=KVGFabMX11TZNzlX-1",
         "image": "/images/Thumb_catoro.png"
     }
