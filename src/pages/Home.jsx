@@ -19,7 +19,7 @@ import Magnet from '../assets/components/Magnet';
 import HomeBannerVhs from "../assets/images/home-banner_vhs.svg";
 import Yogurt from "../assets/images/Yogurt_Preview.png";
 import Catoro from "../assets/images/Catoro_Preview.png";
-import STO from "../assets/images/STO_Preview.png";
+import STO from "../assets/images/STO_Preview2.png";
 import VhsTape from '../assets/components/VhsTape';
 
 function Home() {
@@ -31,8 +31,10 @@ function Home() {
     }
 
     const handleMouseLeave = () => {
-        setHoveredCta(false);
-    }
+        setTimeout(() => {
+            setHoveredCta(false);
+        }, 150);
+    };
 
     // Preview Image on the TV
     const [hoveredId, setHoveredId] = useState(null);
@@ -73,11 +75,14 @@ function Home() {
                     <div className="col-1-md col-1-sm home-banner_icons">
                         <Icons className="home-banner_icons" />
                     </div>
-                    <div className="col-4-lg col-2-md col-4-sm home-banner_cta-container">
+                    <div 
+                    className="col-4-lg col-2-md col-4-sm home-banner_cta-container"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}>
                         {hoveredCta && (
-                        <div className="home-banner_cta"
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
+                            <div className="home-banner_cta"
+                            // onMouseEnter={handleMouseEnter}
+                            // onMouseLeave={handleMouseLeave}
                         >
                             <Magnet padding={400} disabled={false} magnetStrength={20}>
                                 <AboutBtn />
@@ -90,8 +95,6 @@ function Home() {
                         <img
                             src={HomeBannerVhs}
                             alt=""
-                            onMouseEnter={handleMouseEnter}
-                            onMouseLeave={handleMouseLeave}
                         />
                     </div>
 

@@ -31,24 +31,34 @@ function Projects() {
                             className="project-image">
                                 <img src={project.image} /> 
                             </a>
+                            <h2 className="project-name fw-6 loos-wide">{project.name}</h2>
                             <div className="project-link pretendard">
                                 <p>
                                     <a href={project.url}
                                     target='_blank'
-                                    className="project-name fw-6">
-                                    {project.name}
+                                    className="project-name project-live fw-6">
+                                    Live Site
                                     </a>
                                 </p>
                                 <p>
-                                ✏️ <Link to={`/projects/${project.link}`} 
+                                    <a href="/"
+                                    target='_blank'
+                                    className="project-name project-github fw-6">
+                                        GitHub
+                                    </a>
+                                </p>
+                                <p>
+                                <Link to={`/projects/${project.link}`} 
                                 onClick={() => {window.scroll(0,0)}} 
-                                className="project-case">Case study</Link>
+                                className="project-case fw-6">Case study</Link>
                                 </p>
                             </div>
                         </li>
                         ))}
-                        <li className="project-item-blank"></li>
-                        <li className="project-item-blank"></li>
+                        {/* <li className="project-item-blank">
+                            <div className="project-image" ></div>
+                        </li> */}
+                        {/* <li className="project-item-blank"></li> */}
                     </ul>
                 </div>
             </div>
