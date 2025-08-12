@@ -5,6 +5,7 @@
         "description": "Clinic website redesign project.",
         "link": "simpleclinic",
         "url": "https://simpleclinic.eihyunkim.com",
+        "github": "https://github.com/Eihyun/Simple_Clinic_2025",
         "image": "/images/Thumb_simpleclinic.png"
     },
     {
@@ -13,6 +14,7 @@
         "description": "Browser based interactive mini-game.",
         "link": "savetheocean",
         "url": "https://savetheocean.eihyunkim.com",
+        "github": "https://github.com/Eihyun/SavetheOcean",
         "image": "/images/Thumb_savetheocean.png"
     },
     {
@@ -21,6 +23,7 @@
         "description": "Website for a fictional froyo shop featured on the TV show The Good Place.",
         "link": "yogurt",
         "url": "https://yogurt.eihyunkim.com",
+        "github": "https://github.com/Eihyun/MDIA2294-TermProject",
         "image": "/images/Thumb_yogurt.png"
     },
     {

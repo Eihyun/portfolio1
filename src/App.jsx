@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router';
+import { Routes, Route, Navigate } from 'react-router';
 
 import PageWrap from './global/Layout';
 import Home from './pages/Home';
@@ -20,11 +20,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          {/* <Route path="/projects/wicked" element={<Wicked />} />
+          {/* <Route path="/projects/wicked" element={<Wicked />} /> */}
           <Route path="/projects/yogurt" element={<Yogurt />} />
-          <Route path="/projects/catoro" element={<Catoro />} /> */}
+          <Route path="/projects/catoro" element={<Catoro />} />
           <Route path="/projects/savetheocean" element={<SavetheOcean />} />
-          <Route path="/projects/simpleclinic" element={<SimpleClinic />} />
+          <Route path="/savetheocean" element={<Navigate to="/projects/savetheocean" replace />} />          <Route path="/projects/simpleclinic" element={<SimpleClinic />} />
           <Route path="/crafts" element={<Crafts />} />
           <Route path="*" element={<PageNotFound />} status={404} />
         </Route>
