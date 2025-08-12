@@ -24,6 +24,7 @@
         "name": "Yogurt Yoghurt Yogurté",
         "description": "Website for a fictional froyo shop featured on the TV show The Good Place.",
         "link": "yogurt",
+        "type": "development",
         "url": "https://yogurt.eihyunkim.com",
         "github": "https://github.com/Eihyun/MDIA2294-TermProject",
         "image": "/images/Thumb_yogurt.png"
