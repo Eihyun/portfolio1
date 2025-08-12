@@ -9,6 +9,28 @@ import ThumbBlank from '../assets/images/Thumb_blank.gif';
 function Projects() {
     const [projects, setProjects] = useState([]);
 
+    const getLinkLable = (type) => {
+        switch (type) {
+            case "development":
+                return "Live site";
+            case "design" :
+                return "Figma";
+            default:
+                return "View";
+        }
+    }
+
+    const getGitHubLabel = (type) => {
+        switch (type) {
+            case "development":
+                return "GitHub";
+            case "design" :
+                return null;
+            default:
+                return "View";
+        }
+    }
+
     useEffect(() => {
         fetch('/projects.json')
             .then(response => response.json())
@@ -38,15 +60,17 @@ function Projects() {
                                     <a href={project.url}
                                     target='_blank'
                                     className="project-name project-live fw-6">
-                                    Live Site
+                                    {getLinkLable(project.type)}
                                     </a>
                                 </p>
                                 <p>
+                                {getGitHubLabel(project.type) && 
                                     <a href={project.github}
                                     target='_blank'
                                     className="project-name project-github fw-6">
-                                        GitHub
+                                    {getGitHubLabel(project.type)}
                                     </a>
+                                }
                                 </p>
                                 <p>
                                 <Link to={`/projects/${project.link}`} 

@@ -25,7 +25,7 @@ function SavetheOcean() {
     ];
 
     return(
-        <section className="grid project-detail">
+        <section className="grid projects-detail">
             <div className="col-12-md col-4-sm">
                 <h1 className="case-title noka fw-6">Case Study: Save the Ocean</h1>
             </div>
