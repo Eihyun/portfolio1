@@ -31,9 +31,7 @@ function Home() {
     }
 
     const handleMouseLeave = () => {
-        setTimeout(() => {
-            setHoveredCta(false);
-        }, 150);
+        setHoveredCta(false);
     };
 
     // Preview Image on the TV
@@ -48,7 +46,7 @@ function Home() {
             case 'savetheocean':
                 return STO;
             default:
-                return PlaceHolder;
+                return null;
         }
     };
 
@@ -77,12 +75,11 @@ function Home() {
                     </div>
                     <div 
                     className="col-4-lg col-2-md col-4-sm home-banner_cta-container"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
+                    >
                         {hoveredCta && (
                             <div className="home-banner_cta"
-                            // onMouseEnter={handleMouseEnter}
-                            // onMouseLeave={handleMouseLeave}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
                         >
                             <Magnet padding={400} disabled={false} magnetStrength={20}>
                                 <AboutBtn />
@@ -91,7 +88,10 @@ function Home() {
                     )}
                     </div>
 
-                    <div className="col-8-lg col-9-md col-4-sm home-banner_vhs">
+                    <div className="col-8-lg col-9-md col-4-sm home-banner_vhs"
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
                         <img
                             src={HomeBannerVhs}
                             alt=""

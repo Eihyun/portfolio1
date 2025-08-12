@@ -29,6 +29,9 @@ function SavetheOcean() {
             <div className="col-12-md col-4-sm">
                 <h1 className="case-title noka fw-6">Case Study: Save the Ocean</h1>
             </div>
+            <div className="col-12-md col-4-sm">
+
+            </div>
             <div className="col-12-md col-4-sm case-body-container pretendard">
                 {/* Visit link */}
                 <div className="case-body">

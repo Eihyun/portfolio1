@@ -119,6 +119,14 @@
     display: block;
 }
 
+.project-image.blank > p {
+    position: absolute;
+    text-align: center;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+}
+
 .project-image::after {
     content: '';
     width: 100%;
@@ -168,7 +176,7 @@
         background-color: var(--secondary);
     } */
     
-    .project-case:hover {
+    .project-live:hover, .project-github:hover, .project-case:hover {
         background-color: var(--dark);
         color: white;
     }

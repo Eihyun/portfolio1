@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import "./Projects.css";
 
 import VhsCover from '../assets/components/VhsCover';
+import ThumbBlank from '../../public/images/Thumb_blank.gif';
 
 function Projects() {
     const [projects, setProjects] = useState([]);
@@ -20,7 +21,7 @@ function Projects() {
         <>
             <title>Eihyun's Awesome Projects</title>
             <meta name="description" content="Explore featured web development projects by Eihyun Kim."/>
-            <div className="container">
+            <section className="container">
                 <div className="grid">
                     <h1 className="col-12-md col-4-sm project-page_title loos-wide fw-6">Featured Projects</h1>
                     <ul className="col-12-md col-4-sm mt-8 projects-list">
@@ -31,7 +32,7 @@ function Projects() {
                             className="project-image">
                                 <img src={project.image} /> 
                             </a>
-                            <h2 className="project-name fw-6 loos-wide">{project.name}</h2>
+                            <h2 className="project-name fw-6 kyrial">{project.name}</h2>
                             <div className="project-link pretendard">
                                 <p>
                                     <a href={project.url}
@@ -55,13 +56,17 @@ function Projects() {
                             </div>
                         </li>
                         ))}
-                        {/* <li className="project-item-blank">
-                            <div className="project-image" ></div>
-                        </li> */}
+                        <li className="project-item project-item-blank">
+                            <div className="project-image blank">
+                                <p className="pretendard">Hang Tight!</p>
+                                <img src={ThumbBlank} alt="" />
+                            </div>
+                            <h2 className="project-name fw-6 kyrial">New Project</h2>
+                        </li>
                         {/* <li className="project-item-blank"></li> */}
                     </ul>
                 </div>
-            </div>
+            </section>
         </>
     )
 
