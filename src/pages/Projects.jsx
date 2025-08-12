@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import "./Projects.css";
 
 import VhsCover from '../assets/components/VhsCover';
-import ThumbBlank from '../../public/images/Thumb_blank.gif';
+import ThumbBlank from '../assets/images/Thumb_blank.gif';
 
 function Projects() {
     const [projects, setProjects] = useState([]);
@@ -42,7 +42,7 @@ function Projects() {
                                     </a>
                                 </p>
                                 <p>
-                                    <a href="/"
+                                    <a href={project.github}
                                     target='_blank'
                                     className="project-name project-github fw-6">
                                         GitHub
@@ -58,7 +58,7 @@ function Projects() {
                         ))}
                         <li className="project-item project-item-blank">
                             <div className="project-image blank">
-                                <p className="pretendard">Hang Tight!</p>
+                                <p className="pretendard">To be continued...</p>
                                 <img src={ThumbBlank} alt="" />
                             </div>
                             <h2 className="project-name fw-6 kyrial">New Project</h2>
