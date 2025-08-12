@@ -19,7 +19,7 @@ import Magnet from '../assets/components/Magnet';
 import HomeBannerVhs from "../assets/images/home-banner_vhs.svg";
 import Yogurt from "../assets/images/Yogurt_Preview.png";
 import Catoro from "../assets/images/Catoro_Preview.png";
-import STO from "../assets/images/STO_Preview.png";
+import STO from "../assets/images/STO_Preview2.png";
 import VhsTape from '../assets/components/VhsTape';
 
 function Home() {
@@ -32,7 +32,7 @@ function Home() {
 
     const handleMouseLeave = () => {
         setHoveredCta(false);
-    }
+    };
 
     // Preview Image on the TV
     const [hoveredId, setHoveredId] = useState(null);
@@ -46,7 +46,7 @@ function Home() {
             case 'savetheocean':
                 return STO;
             default:
-                return PlaceHolder;
+                return null;
         }
     };
 
@@ -73,11 +73,13 @@ function Home() {
                     <div className="col-1-md col-1-sm home-banner_icons">
                         <Icons className="home-banner_icons" />
                     </div>
-                    <div className="col-4-lg col-2-md col-4-sm home-banner_cta-container">
+                    <div 
+                    className="col-4-lg col-2-md col-4-sm home-banner_cta-container"
+                    >
                         {hoveredCta && (
-                        <div className="home-banner_cta"
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
+                            <div className="home-banner_cta"
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
                         >
                             <Magnet padding={400} disabled={false} magnetStrength={20}>
                                 <AboutBtn />
@@ -86,12 +88,13 @@ function Home() {
                     )}
                     </div>
 
-                    <div className="col-8-lg col-9-md col-4-sm home-banner_vhs">
+                    <div className="col-8-lg col-9-md col-4-sm home-banner_vhs"
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                    >
                         <img
                             src={HomeBannerVhs}
                             alt=""
-                            onMouseEnter={handleMouseEnter}
-                            onMouseLeave={handleMouseLeave}
                         />
                     </div>
 
